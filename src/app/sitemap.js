@@ -69,7 +69,8 @@ export default async function sitemap() {
     "/blog/website-speed-and-seo-google-ranking",
     "/blog/10-proven-digital-marketing-strategies-grow-your-business-online",
     "/blog/best-digital-marketing-company-jaipur-guide",
-    "/blog/website-vs-google-listing"
+    "/blog/website-vs-google-listing",
+    "/blog/complete-seo-strategy-for-small-businesses-2026",
   ].map((post) => ({
     url: `${URL}${post}`,
     lastModified: new Date().toISOString(),
