@@ -113,7 +113,7 @@ const UnifiedLandingPage = () => {
                       <div className="bg-blue-100 p-2 rounded-xl">
                         <Mail className="text-blue-600 w-5 h-5" />
                       </div>
-                      <p className="text-gray-600">seocialmediasolutions@outlook.com</p>
+                      <p className="text-gray-600">info@seocialmedia.in</p>
                     </div>
                   </div>
                 </div>

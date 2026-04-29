@@ -14,7 +14,7 @@ export const Founders = () => {
         "B.Sc. Hospitality & Hotel Administration - IHM Ahmedabad",
       ],
       linkedin: "https://www.linkedin.com/in/mudit-mathur-6b738327/",
-      email: "seocialmediasolutions@outlook.com",
+      email: "info@seocialmedia.in",
       experience: "12+ Years",
     },
     {
@@ -28,7 +28,7 @@ export const Founders = () => {
         "(MBA) – Symbiosis (Specialization: Marketing)",
       ],
       linkedin: "https://www.linkedin.com/in/kushagra-parashar-6550b7385/",
-      email: "seocialmediasolutions@outlook.com",
+      email: "info@seocialmedia.in",
       experience: "16+ Years",
     },
   ];

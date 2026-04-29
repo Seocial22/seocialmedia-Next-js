@@ -60,9 +60,9 @@ const ContactForm = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "seocialmediasolutions@outlook.com",
+      details: "info@seocialmedia.in",
       gradient: "from-purple-500 to-pink-500",
-      link: "mailto:seocialmediasolutions@outlook.com",
+      link: "mailto:info@seocialmedia.in",
     },
     {
       icon: MapPin,

@@ -119,10 +119,10 @@ const PrivacyPolicy = () => {
             </p>
             <p className="mt-2 font-semibold">
               <a
-                href="mailto:seocialmediasolutions@outlook.com"
+                href="mailto:info@seocialmedia.in"
                 className="text-blue-600 hover:underline"
               >
-                seocialmediasolutions@outlook.com
+                info@seocialmedia.in
               </a>
             </p>
           </Section>
