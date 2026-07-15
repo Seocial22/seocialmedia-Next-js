@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer.jsx";
 import FloatingContact from "@/components/FloatingContact.jsx";
 import NeonCursor from "@/components/NeonCursor";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({ children }) {
   return (
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={` antialiased min-h-screen`}>
         <Header />
         {children}
+        <GoogleAnalytics gaId="G-FN7N5K1Y8L" />
         <NeonCursor />
         <FloatingContact />
         <Footer />

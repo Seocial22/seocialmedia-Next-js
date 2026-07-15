@@ -18,7 +18,7 @@ const Header = () => {
 
   const menuItems = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/digital-marketing-company-jaipur" },
+    { title: "About", href: "/about-us" },
     {
       title: "Services",
       submenu: [

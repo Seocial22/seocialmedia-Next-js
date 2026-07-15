@@ -39,6 +39,49 @@ export const metadata = {
   },
 };
 
+const generateStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://seocialmedia.in/seo-company-jaipur#service",
+  name: "SEO services in Jaipur",
+  description:
+    "SEOcial Media Solutions provides professional SEO services in Jaipur including on-page SEO, off-page SEO, local SEO, technical SEO, and SEO strategy.",
+  url: "https://seocialmedia.in/seo-company-jaipur",
+  image: "https://seocialmedia.in/images/og-seo-company.jpg",
+  provider: {
+    "@type": "Organization",
+    name: "SEOcial Media Solutions",
+    url: "https://seocialmedia.in",
+    logo: "https://seocialmedia.in/images/newlogo.png",
+    sameAs: [
+          "https://www.facebook.com/profile.php?id=61564390163701", // Replace with actual social profiles
+          "https://www.instagram.com/seocialmediasolutions/",
+          "https://www.linkedin.com/company/seocial-media-solution/",
+          "https://X.com/seocialmedia"
+    ]
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Jaipur"
+  },
+  serviceType: [
+    "SEO Services",
+]
+});
+
 export default function Home() {
-  return (<Seo />);
+  return (
+    <>
+      <script
+        id="seo-company-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData()),
+        }}
+      />
+
+      <Seo />
+    </>
+  );
 }

@@ -111,8 +111,8 @@ const FloatingContact = () => {
               <Image
                 src="/images/smsavatar.png"
                 alt="Chat Character"
-                width={48}
-                height={48}
+                width={200}
+                height={200}
                 className="relative w-full h-full object-cover"
               />
             </div>

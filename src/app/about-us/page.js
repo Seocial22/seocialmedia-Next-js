@@ -1,22 +1,22 @@
 import AboutUs from "@/components/AboutUs";
 import React from "react";
 export const metadata = {
-  title: "Best Website Development & Digital Marketing Company in Jaipur | SEOcial Media",
+  title: "About SEOcial Media Solutions | Accelerating Digital Growth",
   description:
-    "Looking for the best website development company in Jaipur? SEOcial Media offers web design, SEO, content marketing, and full-scale digital solutions tailored to your business.",
+    "Meet SEOcial Media Solutions - driving business transformation through data-backed SEO, high-ROI paid ads, and full-funnel digital strategy across India.",
   keywords:
     "best website development company in Jaipur, top digital marketing agency, SEO company Jaipur, social media marketing Jaipur, content writing services, Google Ads Jaipur, web design services, responsive websites, Jaipur web development, startup marketing solutions",
   authors: [{ name: "Mudit Mathur" }],
   publisher: "Mudit Mathur",
   robots: "index, follow",
   alternates: {
-    canonical: "https://seocialmedia.in/digital-marketing-company-jaipur",
+    canonical: "https://seocialmedia.in/about-us",
   },
   openGraph: {
-    title: "Best Website Development & Digital Marketing Company in Jaipur",
+    title: "About SEOcial Media Solutions | Accelerating Digital Growth",
     description:
-      "Complete online marketing solutions including SEO, web development, and social media strategies.",
-    url: "https://seocialmedia.in/digital-marketing-company-jaipur",
+      "Meet SEOcial Media Solutions - driving business transformation through data-backed SEO, high-ROI paid ads, and full-funnel digital strategy across India.",
+    url: "https://seocialmedia.in/about-us",
     siteName: "SEOcial Media Solutions",
     images: [
       {
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEOcial Media | Best Website Development in Jaipur",
+    title: "About SEOcial Media Solutions | Accelerating Digital Growth",
     description:
-      "SEOcial Media Solutions builds modern websites and digital strategies that deliver real results.",
+      "Meet SEOcial Media Solutions - driving business transformation through data-backed SEO, high-ROI paid ads, and full-funnel digital strategy across India.",
     images: ["https://seocialmedia.in/images/og-home.jpg"],
   },
 };

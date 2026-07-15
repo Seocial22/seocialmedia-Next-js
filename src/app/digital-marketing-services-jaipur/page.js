@@ -1,9 +1,9 @@
 import SocialMediaCompnayJaipur from "@/components/SocialMediaCompnayJaipur";
 import React from "react";
 export const metadata = {
-  title: "Best Google Ads Company in Jaipur | SEOcial Media Solutions",
+  title: "Best Google Ads Company in Jaipur | SEOcial Media",
   description:
-    "Drive targeted traffic and boost sales with SEOcial Media Solutions, the leading Google Ads company in Jaipur. We offer expert PPC campaign management, keyword research, and ROI-focused strategies for your business.",
+    "SEOcial Media is a trusted digital marketing company in Jaipur helping businesses increase visibility and conversions.",
   keywords:
     "Google Ads company Jaipur, PPC services Jaipur, paid advertising Jaipur, digital marketing Jaipur, SEM services Jaipur, online advertising Jaipur, SEOcial Media Google Ads",
   authors: [{ name: "Mudit Mathur" }],
@@ -13,9 +13,9 @@ export const metadata = {
     canonical: "https://seocialmedia.in/google-ads-company-jaipur",
   },
   openGraph: {
-    title: "Google Ads Company in Jaipur | SEOcial Media Solutions",
+    title: "Best Google Ads Company in Jaipur | SEOcial Media",
     description:
-      "Get expert Google Ads management in Jaipur with SEOcial Media Solutions. Maximize ROI with targeted PPC campaigns and paid advertising strategies.",
+      "SEOcial Media is a trusted digital marketing company in Jaipur helping businesses increase visibility and conversions.",
     url: "https://seocialmedia.in/google-ads-company-jaipur",
     siteName: "SEOcial Media Solutions",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Google Ads Company in Jaipur | SEOcial Media Solutions",
+    title: "Best Google Ads Company in Jaipur | SEOcial Media",
     description:
-      "Boost your business with professional Google Ads management in Jaipur, including PPC campaigns and paid advertising strategies.",
+      "SEOcial Media is a trusted digital marketing company in Jaipur helping businesses increase visibility and conversions.",
     images: ["https://seocialmedia.in/images/og-google-ads.jpg"],
   },
 };

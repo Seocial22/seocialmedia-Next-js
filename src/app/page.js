@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import HomePage from "@/components/Home";
 import NewYearPopup from '@/components/NewYearPopup';
 
-export const metadata ={
-  title: "Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions",
-  description: "Leading digital marketing agency in Jaipur offering comprehensive SEO, social media marketing, PPC advertising, web development, and content marketing services. Boost your online presence with proven strategies and measurable results.",
+export const metadata = {
+  title: "Best Digital Marketing Agency in Jaipur | SEOcial",
+  description: "SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.",
   keywords: [
     "digital marketing agency Jaipur",
     "SEO services Jaipur",
@@ -20,7 +20,13 @@ export const metadata ={
     "Instagram marketing Jaipur",
     "website design Jaipur",
     "local SEO Jaipur",
-    "e-commerce marketing Jaipur"
+    "e-commerce marketing Jaipur",
+    "Web Development Company in Jaipur",
+    "Content Writing Agency in India",
+    "Video Editing Services",
+    "Digital Marketing Agency For Ecommerce",
+    "Mobile app development company in jaipur",
+    "Graphic Designers Near me"
   ],
   authors: [{ name: "SEOcial Media Solutions" }],
   creator: "SEOcial Media Solutions",
@@ -30,13 +36,14 @@ export const metadata ={
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://seocialmedia.in'), 
+  metadataBase: new URL('https://seocialmedia.in'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions",
-    description: "Transform your business with Jaipur's top-rated digital marketing agency. Expert SEO, social media marketing, PPC campaigns, and web development services delivering real ROI for local and national businesses.",
+    title: "Best Digital Marketing Agency in Jaipur | SEOcial",
+    description: "SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.",
+
     url: 'https://seocialmedia.in', // Replace with your actual domain
     siteName: 'SEOcial Media Solutions',
     type: 'website',
@@ -52,8 +59,8 @@ export const metadata ={
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions",
-    description: "Expert digital marketing services in Jaipur including SEO, social media marketing, PPC, and web development. Drive growth with data-driven strategies.",
+    title: "Best Digital Marketing Agency in Jaipur | SEOcial",
+    description: "SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.",
     images: ['/twitter-image.jpg'], // Add your Twitter card image
     creator: '@seocialmedia', // Replace with your Twitter handle
   },
@@ -75,7 +82,7 @@ export const metadata ={
   referrer: 'origin-when-cross-origin',
   applicationName: 'SEOcial Media Solutions',
   generator: 'Next.js',
-  abstract: "Professional digital marketing agency in Jaipur specializing in SEO, social media marketing, PPC advertising, web development, and comprehensive online marketing solutions for businesses across Rajasthan and India.",
+  abstract: "SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.",
   other: {
     'geo.region': 'IN-RJ',
     'geo.placename': 'Jaipur',
@@ -93,7 +100,7 @@ export const metadata ={
     'dc.title': 'Best Digital Marketing Agency in Jaipur - SEOcial Media Solutions',
     'dc.creator': 'SEOcial Media Solutions',
     'dc.subject': 'Digital Marketing, SEO, Social Media Marketing, PPC, Web Development',
-    'dc.description': 'Professional digital marketing services in Jaipur including SEO, social media marketing, PPC advertising, and web development',
+    'dc.description': 'SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.',
     'rating': 'General',
     'distribution': 'Global',
     'revisit-after': '7 days',
@@ -124,13 +131,13 @@ export function generateStructuredData() {
         "url": "https://seocialmedia.in",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://seocialmedia.in/logo.png" // Replace with actual logo URL
+          "url": "https://seocialmedia.in/images/company-logo.jpeg" // Replace with actual logo URL
         },
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61564390163701", // Replace with actual social profiles
           "https://www.instagram.com/seocialmediasolutions/",
           "https://www.linkedin.com/company/seocial-media-solution/",
-          "https://twitter.com/seocialmedia"
+          "https://X.com/seocialmedia"
         ],
         "contactPoint": [
           {
@@ -161,7 +168,7 @@ export function generateStructuredData() {
         "@type": "LocalBusiness",
         "@id": "https://seocialmedia.in/#localbusiness",
         "name": "SEOcial Media Solutions",
-        "image": "https://seocialmedia.in/business-image.jpg",
+        "image": "https://seocialmedia.in/company-logo.jpg",
         "telephone": "+91-9461677122",
         "address": {
           "@type": "PostalAddress",
@@ -254,7 +261,40 @@ export function generateStructuredData() {
                 "name": "Content Marketing",
                 "description": "Engaging content creation and marketing strategies to attract and retain customers"
               }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Video Editing Services",
+                "description": "Professional video editing services for businesses and brands."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Content Writing Services",
+                "description": "SEO-friendly content writing services for websites and blogs."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Mobile App Development",
+                "description": "Android and iOS mobile app development services."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Graphic Design Services",
+                "description": "Creative graphic design and branding services."
+              }
             }
+
           ]
         }
       },
@@ -263,7 +303,7 @@ export function generateStructuredData() {
         "@id": "https://seocialmedia.in/om/#website",
         "url": "https://seocialmedia.in",
         "name": "SEOcial Media Solutions",
-        "description": "Best Digital Marketing Agency in Jaipur offering SEO, social media marketing, PPC, web development and content marketing services",
+        "description": "SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.",
         "publisher": {
           "@id": "https://seocialmedia.in/#organization"
         },
@@ -299,4 +339,4 @@ export default function MainHomePage() {
       {/* <NewYearPopup/> */}
     </>
   );
-}
+} 

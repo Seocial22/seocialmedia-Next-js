@@ -5,34 +5,34 @@ import { ChevronDown } from 'lucide-react';
 const MarketingGrid = () => {
     const services = [
         {
-          title: "Your All-in-One Digital Marketing Partner",
-          description: "We don't just market your business—we build brands. From SEO and social media to PPC and content marketing, we craft strategies that drive real growth.",
-          expandedText: "At SEOcial Media Solutions, we take a 360° approach to digital marketing. Our expert team blends creativity with data-driven insights to help you rank higher, attract more customers, and grow your business online."
+            title: "End-to-End Digital Solutions — SEO, social media, ads, websites and content all under one roof",
+            description: "We don't just market your business—we build brands. From SEO and social media to PPC and content marketing, we craft strategies that drive real growth.",
+            expandedText: "At SEOcial Media Solutions, we take a 360° approach to digital marketing. Our expert team blends creativity with data-driven insights to help you rank higher, attract more customers, and grow your business online."
         },
         {
-          title: "6+ Years of Helping Businesses Succeed",
-          description: "With over six years of experience, we've helped businesses in Jaipur and beyond turn clicks into customers and brands into success stories.",
-          expandedText: "Our journey is built on trust, innovation, and results. We know what works in today's digital world, and we tailor every strategy to fit your business goals perfectly."
+            title: "6+ Years of Proven Results — Helping businesses turn online visibility into real revenue",
+            description: "With over six years of experience, we've helped businesses in Jaipur and beyond turn clicks into customers and brands into success stories.",
+            expandedText: "Our journey is built on trust, innovation, and results. We know what works in today's digital world, and we tailor every strategy to fit your business goals perfectly."
         },
         {
-          title: "Tailored Solutions for 15+ Industries",
-          description: "Every business is unique, and so is our approach. Whether you're in healthcare, real estate, education, or e-commerce, we craft digital strategies that deliver results.",
-          expandedText: "We take the time to understand your industry, competitors, and target audience to create a marketing plan that helps you stand out and stay ahead."
+            title: "15+ Industries Served — From clinics to e-commerce brands, we understand your market",
+            description: "Every business is unique, and so is our approach. Whether you're in healthcare, real estate, education, or e-commerce, we craft digital strategies that deliver results.",
+            expandedText: "We take the time to understand your industry, competitors, and target audience to create a marketing plan that helps you stand out and stay ahead."
         },
         {
-          title: "95% Client Retention – Because We Deliver",
-          description: "Our clients stay with us because we focus on results, not just promises. We believe in building long-term partnerships with honesty, transparency, and success.",
-          expandedText: "From startups to established brands, we've helped businesses grow exponentially through data-backed strategies and continuous optimization."
+            title: "95% Client Retention — We build long-term partnerships, not one-off projects",
+            description: "Our clients stay with us because we focus on results, not just promises. We believe in building long-term partnerships with honesty, transparency, and success.",
+            expandedText: "From startups to established brands, we've helped businesses grow exponentially through data-backed strategies and continuous optimization."
         },
         {
-          title: "Hassle-Free Onboarding & Execution",
-          description: "We make digital marketing simple. Our streamlined onboarding process ensures you see results quickly—without the stress of managing it yourself.",
-          expandedText: "From planning to execution, we handle everything so you can focus on what you do best—running your business. Think of us as your digital growth partner."
+            title: "Hassle-Free Onboarding & Execution",
+            description: "We make digital marketing simple. Our streamlined onboarding process ensures you see results quickly—without the stress of managing it yourself.",
+            expandedText: "From planning to execution, we handle everything so you can focus on what you do best—running your business. Think of us as your digital growth partner."
         },
         {
-          title: "Smart Market Research for Smarter Strategies",
-          description: "Great marketing starts with great insights. We dive deep into data, trends, and competitor analysis to create strategies that give you a competitive edge.",
-          expandedText: "Using cutting-edge tools and a keen eye for market trends, we ensure your business reaches the right audience at the right time, turning visitors into loyal customers."
+            title: "Smart Market Research for Smarter Strategies",
+            description: "Great marketing starts with great insights. We dive deep into data, trends, and competitor analysis to create strategies that give you a competitive edge.",
+            expandedText: "Using cutting-edge tools and a keen eye for market trends, we ensure your business reaches the right audience at the right time, turning visitors into loyal customers."
         }
     ];
 
@@ -52,69 +52,82 @@ const MarketingGrid = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-center mb-12"
             >
-                <h2 className="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight">
-                    <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                        Your Ultimate Partner
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight">
+                    <span className="text-gray-900">
+                        Why Jaipur Businesses
                     </span>
+
                     <br />
-                    <span className="text-gray-800">
-                        for 360° Digital Marketing Success
+
+                    <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-800 bg-clip-text text-transparent">
+                        Trust SEOcial Media Solutions
                     </span>
                 </h2>
-                <p className="text-lg md:text-xl text-gray-600 font-medium mt-4 max-w-2xl mx-auto leading-relaxed">
+                {/* <p className="text-lg md:text-xl text-gray-600 font-medium mt-4 max-w-2xl mx-auto leading-relaxed">
                     Let's Elevate Your Brand & Drive Real Results!
-                </p>
-                <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-6 rounded-full"/>
+                </p> */}
+                <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mt-6 rounded-full" />
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, index) => (
                     <motion.div
                         key={index}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: index * 0.1 }}
-                        whileHover={{ 
-                            scale: 1.02,
-                            transition: { duration: 0.2 }
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        transition={{ delay: index * 0.08 }}
+                        whileHover={{
+                            y: -8,
+                            transition: { duration: 0.25 },
                         }}
-                        className="relative bg-white rounded-lg p-6 cursor-pointer overflow-hidden group transition-all duration-300 ease-in-out"
+                        className="relative bg-white rounded-2xl p-8 overflow-hidden group shadow-sm hover:shadow-2xl transition-all duration-300"
                     >
-                        <div className="absolute inset-0 bg-blue-600 transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0 opacity-90"></div>
-                        
+                        {/* Hover Background */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-700 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
+
                         <div className="relative z-10">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4 group-hover:text-white transition-colors duration-300">
+                            {/* Title */}
+                            <h3 className="text-2xl font-bold leading-snug tracking-tight text-slate-900 mb-4 group-hover:text-white transition-colors duration-300">
                                 {service.title}
                             </h3>
+
+                            {/* Accent Line */}
+                            <div className="w-14 group-hover:w-20 h-1 rounded-full bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-700 mx-auto mb-5 group-hover:bg-white transition-all duration-300"></div>
+
+                            {/* Description */}
                             <motion.div
-                                animate={{ height: expandedItems[index] ? "auto" : "100px" }}
+                                animate={{ height: expandedItems[index] ? "auto" : "120px" }}
                                 className="overflow-hidden"
                             >
-                                <p className="text-gray-600 mb-4 group-hover:text-blue-50 transition-colors duration-300">
+                                <p className="text-[16px] leading-8 text-slate-600 group-hover:text-blue-50 transition-colors duration-300">
                                     {service.description}
                                 </p>
+
                                 {expandedItems[index] && (
                                     <motion.p
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
-                                        className="text-gray-600 group-hover:text-blue-50 transition-colors duration-300"
+                                        className="mt-4 text-[16px] leading-8 text-slate-600 group-hover:text-blue-50 transition-colors duration-300"
                                     >
                                         {service.expandedText}
                                     </motion.p>
                                 )}
                             </motion.div>
+
+                            {/* Button */}
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
+                                whileHover={{ x: 5 }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => toggleExpand(index)}
-                                className="mt-4 flex items-center text-blue-600 group-hover:text-white transition-colors duration-300"
+                                className="mt-6 inline-flex items-center font-semibold text-blue-600 group-hover:text-white transition-all duration-300"
                             >
-                                Read {expandedItems[index] ? 'Less' : 'More'}
+                                Read {expandedItems[index] ? "Less" : "More"}
+
                                 <motion.div
                                     animate={{ rotate: expandedItems[index] ? 180 : 0 }}
-                                    className="ml-1"
+                                    className="ml-2"
                                 >
-                                    <ChevronDown size={16} />
+                                    <ChevronDown size={18} />
                                 </motion.div>
                             </motion.button>
                         </div>

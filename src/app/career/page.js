@@ -1,9 +1,9 @@
 import CareerPage from '@/components/CareerPage'
 import React from 'react'
 export const metadata = {
-  title: " Join Our Digital Marketing & Web Development Team in Jaipur",
+  title: " Join Digital Marketing & Web Development Team Jaipur",
   description:
-    "Explore exciting career opportunities at SEOcial Media, Jaipur's leading website development and digital marketing company. Join our team of creative professionals and grow your career with us.",
+    "Join SEOcial Media and build your career in digital marketing, SEO, web development, content writing and creative technologies in Jaipur.",
   keywords:
     "SEOcial Media careers, jobs in Jaipur digital marketing, web development jobs Jaipur, SEO company jobs, social media marketing careers, content writing jobs Jaipur, join SEOcial Media, digital marketing team Jaipur",
   authors: [{ name: "Mudit Mathur" }],
@@ -13,9 +13,9 @@ export const metadata = {
     canonical: "https://seocialmedia.in/career",
   },
   openGraph: {
-    title: "Careers at SEOcial Media | Jaipur Digital Marketing & Web Development Jobs",
+    title: "Join Digital Marketing & Web Development Team Jaipur",
     description:
-      "Join SEOcial Media Solutions for exciting roles in web development, SEO, digital marketing, and creative content. Build your career with a leading company in Jaipur.",
+      "Join SEOcial Media and build your career in digital marketing, SEO, web development, content writing and creative technologies in Jaipur.",
     url: "https://seocialmedia.in/career",
     siteName: "SEOcial Media Solutions",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers at SEOcial Media | Join Our Jaipur Team",
+    title: "Join Digital Marketing & Web Development Team Jaipur",
     description:
-      "Explore career opportunities at SEOcial Media Solutions. We're hiring talented web developers, digital marketers, and content creators in Jaipur.",
+      "Join SEOcial Media and build your career in digital marketing, SEO, web development, content writing and creative technologies in Jaipur.",
     images: ["https://seocialmedia.in/images/og-careers.jpg"],
   },
 };

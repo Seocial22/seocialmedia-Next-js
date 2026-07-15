@@ -38,9 +38,46 @@ export const metadata = {
   },
 };
 
+const generateStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://seocialmedia.in/video-editing-company-jaipur#service",
+  name: "Video Editing Company in Jaipur | SEOcial Media Solutions",
+  description:
+    "SEOcial Media Solutions provides professional video editing services in Jaipur, including promotional videos, motion graphics, post-production, social media video editing, corporate videos, and brand video creation.",
+  url: "https://seocialmedia.in/video-editing-company-jaipur",
+  image: "https://seocialmedia.in/images/og-video-editing.jpg",
+  serviceType: "Video Editing Services",
+  areaServed: {
+    "@type": "City",
+    name: "Jaipur"
+  },
+  provider: {
+    "@type": "Organization",
+    name: "SEOcial Media Solutions",
+    url: "https://seocialmedia.in",
+    logo: "https://seocialmedia.in/images/newlogo.png",
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61564390163701",
+      "https://www.instagram.com/seocialmediasolutions/",
+      "https://www.linkedin.com/company/seocial-media-solution/",
+      "https://x.com/seocialmedia"
+    ]
+  }
+});
+
 function Home() {
   return (
+    <>
+    <script
+        id="video-editing-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData()),
+        }}
+      />
     <VideoEditing />
+    </>
   )
 }
 

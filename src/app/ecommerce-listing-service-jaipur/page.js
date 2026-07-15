@@ -3,9 +3,9 @@ import EcommerceListingService from "@/components/EcommerceListingService";
 
 
 export const metadata = {
-  title: "Top E-commerce Listing Service in Jaipur- SEOcial Media Solutions",
+  title: "Top E-commerce Listing Service Jaipur | SEOcial Media",
   description:
-    "Expand your business with our multi-platform e-commerce listing service. Get your products listed on Amazon, Flipkart, eBay, Etsy, Myntra, Meesho, and 50+ marketplaces with SEO-optimized listings and performance management.",
+    "Professional eCommerce listing services in Jaipur for Amazon, Flipkart, Meesho and other online marketplaces.",
   keywords:
     "e-commerce listing service, multi-platform product listing, Amazon product listing, Flipkart listing service, marketplace SEO, eBay listing, Myntra product listing, Shopify listing service, Meesho listing, IndiaMart listing",
   authors: [{ name: "Mudit Mathur" }],
@@ -15,9 +15,9 @@ export const metadata = {
     canonical: "https://seocialmedia.in/ecommerce-listing-service-jaipur",
   },
   openGraph: {
-    title: "Multi-Platform E-commerce Listing Service | Amazon, Flipkart, eBay, Etsy & More",
+    title: "Top E-commerce Listing Service Jaipur | SEOcial Media",
     description:
-      "Boost your online sales by listing products on Amazon, Flipkart, eBay, Etsy, Myntra, Shopify, Meesho & 50+ marketplaces. Our experts handle SEO-optimized listings, pricing strategies, and performance analytics.",
+      "Professional eCommerce listing services in Jaipur for Amazon, Flipkart, Meesho and other online marketplaces..",
     url: "https://seocialmedia.in/ecommerce-listing-service-jaipur",
     siteName: "SEOcial Media Solutions",
     images: [
@@ -32,14 +32,51 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Multi-Platform E-commerce Listing Service | Amazon, Flipkart, eBay & More",
+    title: "Top E-commerce Listing Service Jaipur | SEOcial Media",
     description:
-      "Professional multi-platform product listing service. List on Amazon, Flipkart, eBay, Etsy, Myntra & more. Get SEO-optimized listings and sales growth today.",
+      "Professional eCommerce listing services in Jaipur for Amazon, Flipkart, Meesho and other online marketplaces.",
     images: ["https://seocialmedia.in/images/og-ecommerce-listing.jpg"],
   },
 };
 
+const generateStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://seocialmedia.in/ecommerce-listing-service-jaipur#service",
+  name: "Top E-commerce Listing Service in Jaipur | SEOcial Media Solutions",
+  description:
+    "SEOcial Media Solutions provides professional eCommerce listing services in Jaipur for Amazon, Flipkart, Meesho, Shopify, Myntra, IndiaMart, and other online marketplaces. We optimize product listings to improve visibility, rankings, and sales.",
+  url: "https://seocialmedia.in/ecommerce-listing-service-jaipur",
+  image: "https://seocialmedia.in/images/og-ecommerce-listing.jpg",
+  serviceType: "E-commerce Listing Services",
+  areaServed: {
+    "@type": "City",
+    name: "Jaipur"
+  },
+  provider: {
+    "@type": "Organization",
+    name: "SEOcial Media Solutions",
+    url: "https://seocialmedia.in",
+    logo: "https://seocialmedia.in/images/newlogo.png",
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61564390163701",
+      "https://www.instagram.com/seocialmediasolutions/",
+      "https://www.linkedin.com/company/seocial-media-solution/",
+      "https://x.com/seocialmedia"
+    ]
+  }
+});
+
 
 export default function EcommerceListingServiceJaipurPage() {
-  return <div><EcommerceListingService/></div>;
+  return <>
+  <script
+        id="ecommerce-listing-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData()),
+        }}
+      />
+  <EcommerceListingService/>
+  </>;
 }   

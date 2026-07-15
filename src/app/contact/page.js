@@ -1,9 +1,9 @@
 import ContactForm from '@/components/ContactUs'
 import React from 'react'
 export const metadata = {
-  title: "Contact SEOcial Media | Website Development & Digital Marketing in Jaipur",
+  title: "Contact SEOcial Media | Digital Marketing Jaipur",
   description:
-    "Get in touch with SEOcial Media, the leading website development and digital marketing company in Jaipur. Reach out for web design, SEO, and online marketing solutions tailored to your business.",
+    "Contact SEOcial Media in Jaipur for SEO, website development, Google Ads and social media marketing services.",
   keywords:
     "contact SEOcial Media, website development Jaipur contact, digital marketing agency Jaipur contact, SEO company Jaipur contact, social media marketing Jaipur contact, web design services Jaipur, startup marketing solutions contact",
   authors: [{ name: "Mudit Mathur" }],
@@ -13,9 +13,9 @@ export const metadata = {
     canonical: "https://seocialmedia.in/contact",
   },
   openGraph: {
-    title: "Contact SEOcial Media | Jaipur Digital Marketing & Web Development",
+    title: "Contact SEOcial Media | Digital Marketing Jaipur",
     description:
-      "Reach out to SEOcial Media Solutions for expert web development, SEO, and digital marketing services in Jaipur.",
+      "Contact SEOcial Media in Jaipur for SEO, website development, Google Ads and social media marketing services.",
     url: "https://seocialmedia.in/contact",
     siteName: "SEOcial Media Solutions",
     images: [
@@ -30,9 +30,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact SEOcial Media | Jaipur Website Development & Marketing",
+    title: "Contact SEOcial Media | Digital Marketing Jaipur",
     description:
-      "Get in touch with SEOcial Media Solutions for modern websites, SEO, and digital strategies that get results.",
+      "Contact SEOcial Media in Jaipur for SEO, website development, Google Ads and social media marketing services.",
     images: ["https://seocialmedia.in/images/og-contact.jpg"],
   },
 };

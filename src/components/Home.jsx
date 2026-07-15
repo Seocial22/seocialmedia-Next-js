@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Sparkles } from "lucide-react";
 import Link from "next/link";
- 
+
 
 import ProductServicesPage from "./ProductServicesPage";
 import ServicesCarousel from "./ServicesCarousel";
@@ -125,23 +125,28 @@ const YouTubeVideo = ({ videoId }) => {
 
 // ✅ Animated Title
 const AnimatedTitle = () => (
-  <div className="text-2xl sm:text-3xl md:text-4xl mb-6 lg:mb-12 font-bold leading-tight">
-    <div className="text-white whitespace-nowrap lg:text-5xl">Transform Your</div>
-    <div className="text-white whitespace-nowrap pb-2 lg:text-5xl">Digital Presence with</div>
-    <div className="w-full overflow-hidden">
-      <TypeAnimation
-        sequence={[
-          "Website Development", 1500,
-          "SEO Optimization", 1500,
-          "Google Ads", 1500,
-          "Social Media Marketing", 1500,
-          "Content Writing", 1500,
-        ]}
-        wrapper="div"
-        speed={50}
-        repeat={Infinity}
-        className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400 text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] pb-4 whitespace-nowrap"
-      />
+  <div className="mb-6">
+    <h1 className="text-white font-extrabold tracking-tight">
+      <span className="block text-4xl sm:text-5xl lg:text-6xl leading-[1.2]">
+        Jaipur's Trusted
+      </span>
+
+      <span className="inline-block w-fit text-4xl sm:text-5xl lg:text-6xl mt-2 pb-2 whitespace-nowrap leading-[1.3] bg-gradient-to-r from-blue-400 via-white to-yellow-300 bg-clip-text text-transparent">
+        Digital Marketing Agency
+      </span>
+
+      <span className="block text-2xl sm:text-3xl lg:text-4xl mt-3 leading-[1.3]">
+        <span className="text-white">for </span>
+        <span className="text-yellow-400 italic font-bold">
+          Real Measurable Business Growth
+        </span>
+      </span>
+    </h1>
+
+    <div className="flex items-center gap-3 mt-6">
+      <div className="w-14 h-1 rounded-full bg-blue-500"></div>
+      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+      <div className="w-14 h-1 rounded-full bg-blue-500"></div>
     </div>
   </div>
 );
@@ -151,7 +156,7 @@ const HeroSection = () => {
   const youtubeVideoId = "obyYIaHxkSo";
 
   return (
-    <section className="relative min-h-screen">
+    <section className="relative overflow-hidden min-h-[760px] lg:min-h-screen flex items-center">
       <HeroBackground />
       <div className="relative container mx-auto px-4">
         <motion.nav
@@ -170,8 +175,8 @@ const HeroSection = () => {
           </div>
         </motion.nav>
 
-        <div className="flex flex-col lg:flex-row items-center py-8 gap-12">
-          <div className="lg:w-1/2 space-y-6 sm:space-y-8">
+        <div className="flex flex-col justify-center min-h-[82vh] pt-12 pb-24">
+          <div className="w-full max-w-5xl space-y-7">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -190,27 +195,60 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-base sm:text-lg text-gray-300 max-w-xl"
+              className="max-w-2xl text-base sm:text-lg leading-8 text-gray-300"
             >
-              Unlock the power of AI-driven marketing solutions that deliver real results. 
-              Boost your online visibility and grow your business with our cutting-edge platform.
+              From local startups to growing brands across Rajasthan,
+              <span className="font-semibold text-white">
+                {" "}SEOcial Media Solutions{" "}
+              </span>
+              helps businesses attract the right audience, generate quality leads,
+              and turn online traffic into
+              <span className="font-semibold text-blue-400">
+                {" "}measurable business growth.
+              </span>
             </motion.p>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}>
-              <Link href="/contact">
-                <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2">
-                  <span>Get Started</span>
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </button>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="pt-2"
+            >
+              <Link
+                href="/contact"
+                className="group inline-flex items-center justify-center gap-3
+                px-7 py-4
+                bg-gradient-to-r from-blue-500 to-indigo-600
+                text-white text-base font-semibold
+                rounded-xl
+                shadow-xl shadow-blue-500/20
+                hover:shadow-2xl hover:shadow-blue-500/30
+                hover:scale-105
+                transition-all duration-300"
+              >
+                <span>Get Your Free Consultation</span>
+
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    d="M5 12h14M12 5l7 7-7 7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </Link>
             </motion.div>
+
           </div>
 
-          <div className="lg:w-1/2 flex justify-center items-center">
+          {/* <div className="lg:w-1/2 flex justify-center items-center">
             <YouTubeVideo videoId={youtubeVideoId} />
-          </div>
+          </div> */}
         </div>
       </div>
       <WaveBottom />
@@ -230,7 +268,7 @@ const HomePage = () => {
 
   return (
     <>
-   
+
 
       <div className="relative">
         <h1 className="hidden">Best Digital Marketing Agency in Jaipur</h1>

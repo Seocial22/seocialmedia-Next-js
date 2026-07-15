@@ -88,18 +88,32 @@ const WorkShowcase = () => {
             Industries We Serve
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Work Showcase
+            <span className="block">
+              Digital Marketing Solutions
+            </span>
+
+            <span className="block text-blue-600 mt-1">
+              for Every Industry
+            </span>
           </h2>
           <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full" />
         </motion.div>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-4 text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-medium"
-        >
-          Delivering exceptional digital marketing results across diverse industries
+        <motion.p className="mt-6 max-w-4xl mx-auto text-gray-600 text-lg leading-8">
+          From <span className="font-semibold text-gray-900">Real Estate</span> and
+          <span className="font-semibold text-gray-900"> Healthcare</span> to
+          <span className="font-semibold text-gray-900"> E-commerce</span>,
+          <span className="font-semibold text-gray-900"> Education</span>,
+          <span className="font-semibold text-gray-900"> Hospitality</span>,
+          <span className="font-semibold text-gray-900"> Technology</span>, and
+          <span className="font-semibold text-gray-900"> Manufacturing</span>,
+          we've helped businesses generate more traffic, quality leads, and measurable growth.
+
+          <br />
+
+          <span className="text-blue-600 font-semibold">
+            Every strategy is built around your industry, your audience, and your business goals
+            — never a one-size-fits-all approach.
+          </span>
         </motion.p>
       </div>
 

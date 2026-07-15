@@ -48,7 +48,7 @@ const ProductServicesPage = () => {
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         {/* Header Section */}
         <div className="text-center mb-6 sm:mb-10">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -70,17 +70,45 @@ const ProductServicesPage = () => {
               </span>
             </h2>
             <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full" />
+          </motion.div> */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="inline-block"
+          >
+            <span className="block text-lg font-extrabold text-blue-600 tracking-wider uppercase mb-3">
+              Why Choose Us
+            </span>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
+              {/* First Line */}
+              <span className="block font-bold text-gray-900">
+                A Digital Marketing Partner
+              </span>
+
+              {/* Second Line */}
+              <span className="block font-black text-gray-900 mt-2">
+                That Delivers —
+                <span className="text-blue-600 italic ml-2">
+                  Not Just Promises
+                </span>
+              </span>
+            </h2>
           </motion.div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="mt-4 text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-medium"
+            // className="mt-4 text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-medium"
+            className="mt-6 max-w-4xl mx-auto text-center text-gray-600 text-base sm:text-lg leading-8 font-normal"
           >
-            Experience unparalleled digital transformation with our
-            comprehensive suite of services, backed by years of expertise and
-            innovation.
+            For over 6 years, SEOcial Media Solutions has helped businesses across Jaipur and India build a digital presence that actually drives results — more visibility, more leads, and more customers.
+
+Whether you need to rank higher on Google, grow your following on social media, run high-converting ad campaigns, or launch a brand-new website, our team builds strategies tailored to your business — not templates copied from someone else's.
           </motion.p>
         </div>
 

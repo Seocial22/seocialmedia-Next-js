@@ -1,9 +1,9 @@
 import GoogleServices from "@/components/GoogleServices";
 import React from "react";
 export const metadata = {
-  title: "Lead Generation Company in Jaipur | SEOcial Media Solutions",
+  title: "Lead Generation Company in Jaipur | SEOcial Media",
   description:
-    "Grow your business with SEOcial Media Solutions, the top lead generation company in Jaipur. We offer B2B and B2C lead generation, email campaigns, and sales prospecting to increase revenue.",
+    "Generate high quality B2B and B2C leads with Jaipur's trusted lead generation and performance marketing company.",
   keywords:
     "lead generation company Jaipur, B2B lead generation Jaipur, B2C lead generation Jaipur, sales leads Jaipur, business leads Jaipur, marketing leads Jaipur",
   authors: [{ name: "Mudit Mathur" }],
@@ -13,9 +13,9 @@ export const metadata = {
     canonical: "https://seocialmedia.in/lead-generation-company-jaipur",
   },
   openGraph: {
-    title: "Lead Generation Company in Jaipur | SEOcial Media Solutions",
+    title: "Lead Generation Company in Jaipur | SEOcial Media",
     description:
-      "Get quality leads for your business with SEOcial Media Solutions in Jaipur. Expert B2B & B2C lead generation services to boost sales and revenue.",
+      "Generate high quality B2B and B2C leads with Jaipur's trusted lead generation and performance marketing company.",
     url: "https://seocialmedia.in/lead-generation-company-jaipur",
     siteName: "SEOcial Media Solutions",
     images: [
@@ -30,15 +30,55 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lead Generation Company in Jaipur | SEOcial Media Solutions",
+    title: "Lead Generation Company in Jaipur | SEOcial Media",
     description:
-      "Professional lead generation services in Jaipur – B2B & B2C leads, email campaigns, and sales prospecting to grow your business.",
+      "Generate high quality B2B and B2C leads with Jaipur's trusted lead generation and performance marketing company.",
     images: ["https://seocialmedia.in/images/og-lead-generation.jpg"],
   },
 };
 
+const generateStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://seocialmedia.in/lead-generation-company-jaipur#service",
+  name: "Lead Generation Company in Jaipur | SEOcial Media Solutions",
+  description:
+    "SEOcial Media Solutions provides professional lead generation services in Jaipur, helping businesses generate high-quality B2B and B2C leads through performance marketing, Google Ads, Meta Ads, and digital marketing strategies.",
+  url: "https://seocialmedia.in/lead-generation-company-jaipur",
+  image: "https://seocialmedia.in/images/og-lead-generation.jpg",
+  serviceType: "Lead Generation Services",
+  areaServed: {
+    "@type": "City",
+    name: "Jaipur"
+  },
+  provider: {
+    "@type": "Organization",
+    name: "SEOcial Media Solutions",
+    url: "https://seocialmedia.in",
+    logo: "https://seocialmedia.in/images/newlogo.png",
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61564390163701",
+      "https://www.instagram.com/seocialmediasolutions/",
+      "https://www.linkedin.com/company/seocial-media-solution/",
+      "https://x.com/seocialmedia"
+    ]
+  }
+});
+
 function Home() {
-  return (<GoogleServices />);
+  return (
+  <>
+  <script
+    id="lead-generation-schema"
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(generateStructuredData()),
+    }}
+  />
+  <GoogleServices />
+  </>
+
+  );
 }
 
 export default Home;

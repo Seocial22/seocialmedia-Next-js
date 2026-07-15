@@ -3,9 +3,9 @@ import BrandFAQ from "@/components/BrandFAQ";
 import HeroSection from "@/components/HeroSection";
 import ServicesPage from "@/components/ServicesPage";
 export const metadata = {
-  title: "Best Brand Management Service in Jaipur | SEOcial Media Solutions",
+  title: "Best Brand Management Service in Jaipur | SEOcial",
   description:
-    "Grow your business with our complete digital marketing and branding services in Jaipur. We offer social media management, SEO, paid ads, web design, and more.",
+    "Build your brand identity with digital marketing, social media management and branding services in Jaipur.",
   keywords:
     "digital marketing services Jaipur, branding agency Jaipur, social media marketing Jaipur, SEO services Jaipur, content creation, paid ads management, website design Jaipur, Instagram marketing, Facebook ads Jaipur, video editing services",
   authors: [{ name: "Mudit Mathur" }],
@@ -15,9 +15,9 @@ export const metadata = {
     canonical: "https://seocialmedia.in/best-digital-marketing-branding-services-jaipur",
   },
   openGraph: {
-    title: "Best Digital Marketing & Branding Services in Jaipur",
+    title: "Best Brand Management Service in Jaipur | SEOcial",
     description:
-      "SEOcial Media Solutions offers social media management, SEO, paid ads, content creation, and branding services to grow your business online.",
+      "Build your brand identity with digital marketing, social media management and branding services in Jaipur.",
     url: "https://seocialmedia.in/best-digital-marketing-branding-services-jaipur",
     siteName: "SEOcial Media Solutions",
     images: [
@@ -32,18 +32,44 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEOcial Media | Digital Marketing & Branding Services",
+    title: "Best Brand Management Service in Jaipur | SEOcial",
     description:
-      "Boost your online presence with SEOcial Media Solutions. Social media, SEO, paid ads, branding, and more.",
+      "Build your brand identity with digital marketing, social media management and branding services in Jaipur.",
     images: ["https://seocialmedia.in/images/og-digital-marketing.jpg"],
   },
 };
 
- 
- 
+
+const generateStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://seocialmedia.in/best-digital-marketing-branding-services-jaipur#service",
+  name: "Best Brand Management Service in Jaipur | SEOcial Media Solutions",
+  description:
+    "SEOcial Media Solutions provides digital marketing and brand management services in Jaipur including SEO, social media marketing, website development, content creation, paid advertising, branding, and video editing.",
+  url: "https://seocialmedia.in/best-digital-marketing-branding-services-jaipur",
+  image: "https://seocialmedia.in/images/og-digital-marketing.jpg",
+  serviceType: "Brand Management Services",
+  areaServed: {
+    "@type": "City",
+    name: "Jaipur"
+  },
+  provider: {
+    "@type": "Organization",
+    name: "SEOcial Media Solutions",
+    url: "https://seocialmedia.in",
+    logo: "https://seocialmedia.in/images/newlogo.png",
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61564390163701",
+      "https://www.instagram.com/seocialmediasolutions/",
+      "https://www.linkedin.com/company/seocial-media-solution/",
+      "https://x.com/seocialmedia"
+    ]
+  }
+});
 
 export default function MakeYourProductBrand() {
- const faq = [
+  const faq = [
     {
       question: "What services does your branding agency offer?",
       answer: "We provide a complete range of digital branding services including social media marketing, logo and graphic design, content creation, website design, SEO, paid ads, and more to help your business grow online."
@@ -86,16 +112,23 @@ export default function MakeYourProductBrand() {
     }
   ];
 
-return(
+  return (
 
 
     <>
-        <div className="bg-[#F9FAFB]">
- <HeroSection/>
- <ServicesPage/>
-<BenefitsSection/>
-<BrandFAQ  faqItems={faq}/>
-</div>
-     </>
-)
+      <script
+        id="brand-management-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateStructuredData()),
+        }}
+      />
+      <div className="bg-[#F9FAFB]">
+        <HeroSection />
+        <ServicesPage />
+        <BenefitsSection />
+        <BrandFAQ faqItems={faq} />
+      </div>
+    </>
+  )
 }
