@@ -126,7 +126,7 @@ export function generateStructuredData() {
       {
         "@type": "Organization",
         "@id": "https://seocialmedia.in/#organization",
-        "name": "SEOcial Media Solutions",
+        "name": "Welcome to the Best Digital Marketing Agency In Jaipur, India",
         "alternateName": "SEOcial Media",
         "url": "https://seocialmedia.in",
         "logo": {

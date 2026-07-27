@@ -1,74 +1,56 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
-  Code, Search, PenTool, MousePointer, Share2,
-  Building
+  Code, Search, PenTool, MousePointer, Share2, Clapperboard
 } from 'lucide-react';
-import Image from 'next/image';
+
+const services = [
+  {
+    icon: Code,
+    title: 'Website Development',
+    description: 'Fast, mobile-friendly, SEO-optimized websites launched in as little as 7 days.',
+    actionLink: '/web-development-company-jaipur',
+  },
+  {
+    icon: Search,
+    title: 'SEO Services',
+    description: 'On-page, off-page, technical and local SEO built for long-term, sustainable growth.',
+    actionLink: '/seo-company-jaipur',
+  },
+  {
+    icon: Clapperboard,
+    title: 'Video Editing',
+    description: 'Professional video content for social media, ads, and brand storytelling.',
+    actionLink: '/video-editing-company-jaipur',
+  },
+  {
+    icon: MousePointer,
+    title: 'Google Ads & PPC',
+    description: 'High-ROI Google Ads and lead generation campaigns that reach ready-to-buy customers.',
+    actionLink: '/lead-generation-company-jaipur',
+  },
+  {
+    icon: PenTool,
+    title: 'Content Writing',
+    description: 'SEO-friendly blogs, website copy and marketing content that ranks and reads well.',
+    actionLink: '/content-writing-company-jaipur',
+  },
+  {
+    icon: Share2,
+    title: 'Social Media Marketing',
+    description: 'Strategic content, community management, and paid social across Instagram, Facebook and LinkedIn.',
+    actionLink: '/social-media-marketing-jaipur',
+  },
+];
+
+// Duplicate the list so the track can loop seamlessly.
+const trackServices = [...services, ...services];
+
 const ServicesCarousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const services = [
-    {
-      icon: Code,
-      title: 'Website Development',
-      description: 'Get a fast, mobile-friendly, SEO-optimized website built and launched in as little as 7 days.',
-      image: 'images/website-dev.jpg',
-      actionLink: '/web-development-company-jaipur',
-      btnName: 'Explore Web Development',
-    },
-    {
-      icon: Search,
-      title: 'SEO Services',
-      description: 'Rank higher on Google with on-page, off-page, technical and local SEO strategies built for long-term, sustainable growth.',
-      image: 'images/seo.jpg',
-      actionLink: '/seo-company-jaipur',
-      btnName: "Explore SEO Services"
-    },
-    {
-      icon: Building,
-      title: 'Video Editing',
-      description: 'Professional video content for social media, ads, and brand storytelling that captures attention and drives engagement.',
-      actionLink: '/video-editing-company-jaipur',
-      btnName: "Explore SEO Services"
-    },
-    {
-      icon: MousePointer,
-      title: 'Google Ads & PPC',
-      description: 'Get in front of customers actively searching for your business with high-ROI Google Ads and lead generation campaigns.',
-      image: 'images/googlead.jpg',
-      actionLink: '/lead-generation-company-jaipur ',
-      btnName: "Explore Google Services",
-    },
-    {
-      icon: PenTool,
-      title: 'Content Writing',
-      description: 'SEO-friendly blogs, website copy and marketing content that engages readers and ranks on search engines. ',
-      image: 'images/content-writing.jpg',
-      actionLink: '/content-writing-company-jaipur',
-      btnName: "Explore Content Writing "
-    },
-    {
-      icon: Share2,
-      title: 'Social Media Marketing',
-      description: 'Build a brand people recognize and trust with strategic content, community management, and paid social campaigns across Instagram, Facebook and LinkedIn.',
-      image: 'images/social-media.jpg',
-      actionLink: '/social-media-marketing-jaipur',
-      btnName: "Explore Social Media Marketing"
-    }
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % services.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [services.length]);
-
   return (
-    <section className="py-6 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
-      <div className="max-w-5xl mx-auto px-4">
+    <section className="py-12 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center px-3 py-1 bg-yellow-400/10 rounded-full mb-2 backdrop-blur-sm border border-yellow-400/20 hover:bg-yellow-400/20 transition-colors">
             <span className="text-yellow-400 text-sm font-semibold">Services</span>
           </div>
@@ -76,83 +58,70 @@ const ServicesCarousel = () => {
             Digital Solutions
           </h2>
         </div>
+      </div>
 
-        {/* Carousel */}
-        <div className="relative">
-          <div className="overflow-hidden rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50">
-            <div
-              className="flex transition-transform duration-1000 ease-in-out"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            >
-              {services.map((service, index) => (
-                <div key={index} className="min-w-full">
-                  <div className="grid md:grid-cols-2">
-                    {/* Image Section */}
-                    <div className="relative h-48 md:h-[350px] overflow-hidden group">
-                      <Image
-                        src={`/images/website-dev.jpg`} // <-- Add leading slash if using public folder
-                        alt={service.title}
-                        width={600}
-                        height={350}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-transparent transition-opacity duration-700 group-hover:opacity-75" />
+      {/* Marquee */}
+      <div className="relative w-full">
+        {/* Fade edges */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-slate-950 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-slate-950 to-transparent z-10" />
 
-                      {/* Content Overlay */}
-                      <div className="relative h-full p-4 md:p-6 flex flex-col justify-between z-10">
-                        <div className="space-y-2 transform transition-all duration-500 group-hover:translate-y-1">
-                          <div className="flex items-center space-x-2">
-                            <div className="p-2 bg-yellow-400/10 rounded-lg group-hover:bg-yellow-400/20 transition-colors">
-                              <service.icon className="w-5 h-5 text-yellow-400 transform transition-transform duration-500 group-hover:rotate-12" />
-                            </div>
-                            <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">{service.title}</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* New Right Section */}
-                    <div className="p-4 md:p-6 bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col justify-center">
-                      <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                      <p className="text-gray-300 mb-4">{service.description}</p>
-                      <a
-                        href={service.actionLink}
-                        className="group inline-flex items-center gap-2 px-4 py-2 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-yellow-500 transition-colors"
-                      >
-                        <span>{service.btnName}</span>
-
-                        <svg
-                          className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Navigation Dots */}
-          <div className="flex justify-center mt-4 space-x-1">
-            {services.map((_, index) => (
-              <div
+        <div className="group overflow-hidden">
+          <div className="flex w-max gap-4 animate-marquee-right group-hover:[animation-play-state:paused]">
+            {trackServices.map((service, index) => (
+              <a
                 key={index}
-                className={`transition-all duration-500 rounded-full cursor-pointer hover:scale-110 ${currentSlide === index
-                  ? 'w-6 h-1.5 bg-yellow-400'
-                  : 'w-1.5 h-1.5 bg-yellow-400/30 hover:bg-yellow-400/50'
-                  }`}
-                onClick={() => setCurrentSlide(index)}
-              />
+                href={service.actionLink}
+                className="peer/card flex-shrink-0 w-56 md:w-64 rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 p-5 hover:border-yellow-400/50 hover:bg-gray-800/80 transition-colors duration-300"
+              >
+                <div className="flex items-center justify-center w-11 h-11 rounded-lg bg-yellow-400/10 mb-4">
+                  <service.icon className="w-5 h-5 text-yellow-400" />
+                </div>
+                <h3 className="text-base font-bold text-white mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-300 leading-relaxed mb-4">
+                  {service.description}
+                </p>
+                <span className="inline-flex items-center gap-1 text-sm font-semibold text-yellow-400">
+                  Learn more
+                  <svg
+                    className="w-3.5 h-3.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
             ))}
           </div>
         </div>
       </div>
+
+      {/* Marquee animation + reduced-motion support.
+         If your Tailwind config supports arbitrary keyframes globally,
+         you can move this into tailwind.config.js instead. */}
+      <style jsx global>{`
+        @keyframes marquee-right {
+          from {
+            transform: translateX(-50%);
+          }
+          to {
+            transform: translateX(0%);
+          }
+        }
+        .animate-marquee-right {
+          animation: marquee-right 28s linear infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animate-marquee-right {
+            animation: none;
+          }
+        }
+      `}</style>
     </section>
   );
 };
