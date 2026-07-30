@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-careers.jpg",
+        url: "https://seocialmedia.in/images/og-careers.webp",
         width: 1200,
         height: 630,
         alt: "SEOcial Media Careers OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Join Digital Marketing & Web Development Team Jaipur",
     description:
       "Join SEOcial Media and build your career in digital marketing, SEO, web development, content writing and creative technologies in Jaipur.",
-    images: ["https://seocialmedia.in/images/og-careers.jpg"],
+    images: ["https://seocialmedia.in/images/og-careers.webp"],
   },
 };
 

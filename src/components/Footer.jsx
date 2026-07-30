@@ -72,7 +72,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <Image
-              src="/images/footer-logo.jpg"
+              src="/images/footer-logo.webp"
               alt="Company Logo"
               width={120}
               height={48}

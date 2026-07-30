@@ -11,7 +11,7 @@ const SEOLandingSection = () => {
     const index = (i + 1).toString().padStart(3, "0"); // 001, 002...
     return {
       id: (i + 1).toString(),
-      img: `/images/more/best-seo-ajmer-${index}.jpg`,
+      img: `/images/more/best-seo-ajmer-${index}.webp`,
       url: `https://example.com/${i + 1}`,
       height: 300 + Math.floor(Math.random() * 250), // random height 300–550
     };

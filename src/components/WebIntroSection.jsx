@@ -35,7 +35,7 @@ const WebIntroSection = () => {
             {/* Image Section */}
             <div className="lg:w-1/3 flex justify-center">
               <Image
-                src="/images/websitedevelopment.jpg"
+                src="/images/websitedevelopment.webp"
                 alt="Web Development Services"
                 className="rounded-lg shadow-xl"
                 width={500}

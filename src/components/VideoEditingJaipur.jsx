@@ -76,13 +76,13 @@ const VideoEditingJaipur = () => {
       number: "01",
       title: "Submit Your Footage",
       description: "Easily upload your raw footage along with detailed instructions, or schedule a call so we can fully understand your creative vision.",
-      image: "/images/process/submit.jpg"
+      image: "/images/process/submit.webp"
     },
     {
       number: "02",
       title: "Expert Editing",
       description: "Our skilled editors work meticulously, applying precise cuts, dynamic effects, and tailored enhancements to bring your vision to life.",
-      image: "/images/process/editing.jpg"
+      image: "/images/process/editing.webp"
     },
     {
       number: "03",
@@ -94,7 +94,7 @@ const VideoEditingJaipur = () => {
       number: "04",
       title: "Final Delivery",
       description: "Once approved, your video is polished and delivered in your desired format and resolution—ready to captivate your audience.",
-      image: "/images/process/delivery.jpg"
+      image: "/images/process/delivery.webp"
     }
   ];
   
@@ -140,12 +140,12 @@ const VideoEditingJaipur = () => {
     { 
       name: "Promotional Videos", 
       description: "Strategic promotional videos that highlight your products or services, increase brand awareness, and drive sales.",
-      image: "/images/services/promotional.jpeg"
+      image: "/images/services/promotional.webp"
     },
     { 
       name: "Event Coverage", 
       description: "Immersive event coverage that preserves every meaningful moment with crisp visuals and seamless storytelling.",
-      image: "/images/services/event.jpg"
+      image: "/images/services/event.webp"
     },
     { 
       name: "Animation & Motion Graphics", 

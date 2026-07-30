@@ -140,25 +140,25 @@ const GoogleServices = () => {
       title: "Google Business Profile Optimization",
       description:
         "Maximize your local online presence and attract nearby customers.",
-      image: "/images/gbp-setup.jpg",
+      image: "/images/gbp-setup.webp",
     },
     {
       title: "Google Ads Management",
       description:
         "Create and optimize high-converting paid advertising campaigns.",
-      image: "/images/googlead.jpg",
+      image: "/images/googlead.webp",
     },
     {
       title: "Keyword Strategy",
       description:
         "Develop a data-driven approach to target the right audience.",
-      image: "/images/content-writing.jpg",
+      image: "/images/content-writing.webp",
     },
     {
       title: "Performance Tracking",
       description:
         "Detailed analytics and insights to continuously improve results.",
-      image: "/images/analytics.jpg",
+      image: "/images/analytics.webp",
     },
   ];
 

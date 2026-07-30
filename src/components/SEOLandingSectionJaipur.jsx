@@ -2,7 +2,7 @@ import React from "react";
 import Masonry from "./Masonry";
 
 const SEOLandingSectionJaipur = () => {
-  // Generate 10 image URLs: /images/more/best-seo-ajmer-001.jpg to 010
+  // Generate 10 image URLs: /images/more/best-seo-ajmer-001.webp to 010
   const totalImages = 11;
 
   const items = Array.from({ length: totalImages }, (_, i) => {

@@ -140,25 +140,25 @@ const GoogleServicesJaipur = () => {
       title: "Google Business Profile Optimization",
       description:
         "Make your business easier to find on Google and attract more local customers.",
-      image: "/images/gbp-setup.jpg",
+      image: "/images/gbp-setup.webp",
     },
     {
       title: "Google Ads Management",
       description:
         "Run smart and effective Google ads that bring real results and more clicks.",
-      image: "/images/googlead.jpg",
+      image: "/images/googlead.webp",
     },
     {
       title: "Keyword Strategy",
       description:
         "Find and use the best search terms to reach the right people online.",
-      image: "/images/content-writing.jpg",
+      image: "/images/content-writing.webp",
     },
     {
       title: "Performance Tracking",
       description:
         "Track your results with clear data and improve your marketing over time.",
-      image: "/images/analytics.jpg",
+      image: "/images/analytics.webp",
     },
   ];
   

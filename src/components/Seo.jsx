@@ -104,22 +104,22 @@ const Seo = () => {
     {
       title: "SEO Audit",
       description: "Comprehensive analysis of your website's technical SEO elements to ensure a solid foundation for growth.",
-      image: "/images/onpage-seo.jpg"
+      image: "/images/onpage-seo.webp"
     },
     {
       title: "Content Creation",
       description: "Strategic content development that informs, educates, and helps users while targeting relevant keywords.",
-      image: "/images/content-strategy.jpg"
+      image: "/images/content-strategy.webp"
     },
     {
       title: "Technical SEO",
       description: "Expert optimization of your website's technical aspects including speed, structure, and accessibility.",
-      image: "/images/technical-seo.jpg"
+      image: "/images/technical-seo.webp"
     },
     {
       title: "Local SEO",
       description: "Targeted optimization to reach your local audience and convert qualified leads into customers.",
-      image: "/images/seo.jpg"
+      image: "/images/seo.webp"
     }
   ];
 

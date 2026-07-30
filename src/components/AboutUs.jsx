@@ -242,7 +242,7 @@ const AboutUs = () => {
             <motion.div variants={fadeInUp} className="relative">
               <div className="aspect-video rounded-xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/technology.jpg"
+                  src="/images/technology.webp"
                   alt="Digital strategy"
                   width={800}
                   height={450}

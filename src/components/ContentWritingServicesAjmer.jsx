@@ -120,7 +120,7 @@ const ContentWritingServicesAjmer = () => {
       title: "Website Content",
       description:
         "We write clear and catchy content for your website that helps turn visitors into customers.",
-      image: "/images/website-content.jpg",
+      image: "/images/website-content.webp",
       benefits: [
         "More visitors from search engines",
         "More conversions",
@@ -144,7 +144,7 @@ const ContentWritingServicesAjmer = () => {
       title: "Technical Content",
       description:
         "We simplify complex topics into clear, easy-to-follow guides and documentation.",
-      image: "/images/technical-content.jpg",
+      image: "/images/technical-content.webp",
       benefits: [
         "Easier understanding of tough topics",
         "Reduced customer support queries",
@@ -156,7 +156,7 @@ const ContentWritingServicesAjmer = () => {
       title: "Marketing Copy",
       description:
         "We craft powerful ad and campaign content that captures attention and drives results.",
-      image: "/images/marketing.jpg",
+      image: "/images/marketing.webp",
       benefits: [
         "Higher leads and sales",
         "Stronger brand messaging",
@@ -274,7 +274,7 @@ const ContentWritingServicesAjmer = () => {
               >
                 <div className="h-64 overflow-hidden">
                   <Image
-                    src={service.image || "/images/placeholder.jpg"}
+                    src={service.image || "/images/placeholder.webp"}
                     alt={service.alt || service.title}
                     width={600} // A reasonable width for the service card
                     height={400} // A reasonable height for the service card

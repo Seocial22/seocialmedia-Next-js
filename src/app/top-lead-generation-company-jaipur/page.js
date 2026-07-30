@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-lead-generation.jpg",
+        url: "https://seocialmedia.in/images/og-lead-generation.webp",
         width: 1200,
         height: 630,
         alt: "Lead Generation Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Top Lead Generation Company in Jaipur | SEOcial Media Solutions",
     description:
       "Professional lead generation services in Jaipur – B2B & B2C leads, email campaigns, and sales prospecting to boost your business.",
-    images: ["https://seocialmedia.in/images/og-lead-generation.jpg"],
+    images: ["https://seocialmedia.in/images/og-lead-generation.webp"],
   },
 };
 

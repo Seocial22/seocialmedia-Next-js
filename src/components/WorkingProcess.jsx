@@ -117,7 +117,7 @@ const WorkingProcess = () => {
             >
               <div className="relative rounded-xl overflow-hidden">
                 <Image
-                  src="/images/technology.jpg"
+                  src="/images/technology.webp"
                   alt="Digital marketing expertise"
                   className="w-full h-full object-cover aspect-4/3"
                   width={600}

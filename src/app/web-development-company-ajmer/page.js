@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-web-development.jpg",
+        url: "https://seocialmedia.in/images/og-web-development.webp",
         width: 1200,
         height: 630,
         alt: "Web Development Ajmer OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Web Development Company in Ajmer | SEOcial Media Solutions",
     description:
       "Professional web development services in Ajmer – custom website design, responsive development, and e-commerce solutions to grow your business.",
-    images: ["https://seocialmedia.in/images/og-web-development.jpg"],
+    images: ["https://seocialmedia.in/images/og-web-development.webp"],
   },
 };
 

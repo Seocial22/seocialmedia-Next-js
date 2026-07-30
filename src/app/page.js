@@ -50,7 +50,7 @@ export const metadata = {
     locale: 'en_IN',
     images: [
       {
-        url: '/og-image.jpg', // Add your Open Graph image
+        url: '/og-image.webp', // Add your Open Graph image
         width: 1200,
         height: 630,
         alt: 'SEOcial Media Solutions - Digital Marketing Agency Jaipur',
@@ -61,7 +61,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: "Best Digital Marketing Agency in Jaipur | SEOcial",
     description: "SEOcial Media is a Jaipur based digital marketing agency offering SEO, social media marketing, Google Ads, web development and branding solutions.",
-    images: ['/twitter-image.jpg'], // Add your Twitter card image
+    images: ['/twitter-image.webp'], // Add your Twitter card image
     creator: '@seocialmedia', // Replace with your Twitter handle
   },
   robots: {
@@ -131,7 +131,7 @@ export function generateStructuredData() {
         "url": "https://seocialmedia.in",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://seocialmedia.in/images/company-logo.jpeg" // Replace with actual logo URL
+          "url": "https://seocialmedia.in/images/company-logo.webp" // Replace with actual logo URL
         },
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61564390163701", // Replace with actual social profiles
@@ -168,7 +168,7 @@ export function generateStructuredData() {
         "@type": "LocalBusiness",
         "@id": "https://seocialmedia.in/#localbusiness",
         "name": "SEOcial Media Solutions",
-        "image": "https://seocialmedia.in/company-logo.jpg",
+        "image": "https://seocialmedia.in/company-logo.webp",
         "telephone": "+91-9461677122",
         "address": {
           "@type": "PostalAddress",

@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-content-writing.jpg",
+        url: "https://seocialmedia.in/images/og-content-writing.webp",
         width: 1200,
         height: 630,
         alt: "Content Writing Jaipur OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Best Content Writing Company Jaipur | SEOcial Media",
     description:
       "Content writing company in Jaipur delivering SEO blogs, website content and conversion focused copywriting services.",
-    images: ["https://seocialmedia.in/images/og-content-writing.jpg"],
+    images: ["https://seocialmedia.in/images/og-content-writing.webp"],
   },
 };
 
@@ -45,7 +45,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional content writing services in Jaipur, including SEO content writing, website content, blog writing, copywriting, product descriptions, and marketing content to help businesses grow online.",
   url: "https://seocialmedia.in/content-writing-company-jaipur",
-  image: "https://seocialmedia.in/images/og-content-writing.jpg",
+  image: "https://seocialmedia.in/images/og-content-writing.webp",
   serviceType: "Content Writing Services",
   areaServed: {
     "@type": "City",

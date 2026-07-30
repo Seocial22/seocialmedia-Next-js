@@ -231,7 +231,7 @@ const BlogListClient = () => {
                 <div className="h-64 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black from-opacity-30 to-transparent z-10"></div>
                   <Image
-                    src={blog.image || "/images/placeholder.jpg"}
+                    src={blog.image || "/images/placeholder.webp"}
                     alt={blog.alt || blog.heading}
                     width={600} // A reasonable width for the blog card
                     height={400} // A reasonable height, maintaining a 3:2 aspect ratio

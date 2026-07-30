@@ -6,7 +6,7 @@ const services = [
   {
     title: 'Business Marketing Strategy',
     description: 'We develop tailored business marketing strategies to position your brand effectively, target the right audience, and achieve measurable growth outcomes for your business.',
-    image: '/images/marketing.jpg',
+    image: '/images/marketing.webp',
     icon: <FaBullhorn size={20} />,
   },
   {
@@ -18,7 +18,7 @@ const services = [
   {
     title: 'SEO & Advertisement Placement',
     description: 'Boost your online visibility with our SEO expertise and strategic advertisement placements to rank higher on search engines and reach your ideal customers effectively.',
-    image: '/images/seo.jpg',
+    image: '/images/seo.webp',
     icon: <FaCloud size={20} />,
   },
   {

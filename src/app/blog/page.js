@@ -23,7 +23,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-blog.jpg",
+        url: "https://seocialmedia.in/images/og-blog.webp",
         width: 1200,
         height: 630,
         alt: "SEOcial Media Blog OG Image",
@@ -36,7 +36,7 @@ export const metadata = {
     title: "SEOcial Media Blog | Digital Marketing & Web Development Insights",
     description:
       "Read SEOcial Media's blog for expert advice on SEO, web development, social media, and digital marketing strategies.",
-    images: ["https://seocialmedia.in/images/og-blog.jpg"],
+    images: ["https://seocialmedia.in/images/og-blog.webp"],
   },
 };
 

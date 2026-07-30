@@ -89,7 +89,7 @@ const SocialMediaServices = () => {
     {
       title: "Social Media Management",
       description: "Complete management of your social media presence across all major platforms. Our expert team handles content creation, scheduling, community engagement, and performance optimization.",
-      image: "/images/social-management.jpg",
+      image: "/images/social-management.webp",
       benefits: [
         "Consistent brand voice",
         "Regular posting schedule",
@@ -106,7 +106,7 @@ const SocialMediaServices = () => {
     {
       title: "Content Creation",
       description: "Eye-catching visual content and engaging copy for your social media channels. Our creative team produces high-quality photos, videos, graphics, and compelling captions.",
-      image: "/images/marketing.jpg",
+      image: "/images/marketing.webp",
       benefits: [
         "Professional photography",
         "Custom graphics",
@@ -128,7 +128,7 @@ const SocialMediaServices = () => {
     {
       title: "Analytics & Reporting",
       description: "In-depth analysis and reporting of your social media performance. Get actionable insights with our comprehensive monthly reports and real-time analytics.",
-      image: "/images/social-analytics.jpg",
+      image: "/images/social-analytics.webp",
       benefits: [
         "Performance metrics",
         "Competitor analysis",

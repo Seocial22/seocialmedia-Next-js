@@ -128,13 +128,13 @@ const GoogleServicesAjmer = () => {
       title: "Google Business Profile Optimization",
       description:
         "Maximize your local online presence and attract nearby customers.",
-      image: "/images/gbp-setup.jpeg",
+      image: "/images/gbp-setup.webp",
     },
     {
       title: "Google Ads Management",
       description:
         "Create and optimize high-converting paid advertising campaigns.",
-      image: "/images/googlead.jpg",
+      image: "/images/googlead.webp",
     },
     {
       title: "Keyword Strategy",
@@ -164,7 +164,7 @@ const GoogleServicesAjmer = () => {
       title: "Social Media Advertising",
       description:
         "Launch targeted ad campaigns on Facebook, Instagram, and LinkedIn to capture leads and build brand awareness.",
-      image: "/images/social-media-ads.jpg",
+      image: "/images/social-media-ads.webp",
     },
     {
       title: "Conversion Rate Optimization (CRO)",

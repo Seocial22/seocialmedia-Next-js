@@ -36,7 +36,7 @@ const WebIntroSectionAjmer = () => {
             {/* Image Section */}
             <div className="lg:w-1/3 flex justify-center">
               <Image
-                src="/images/websitedevelopment.jpg"
+                src="/images/websitedevelopment.webp"
                 alt="Web Development Services in Ajmer"
                 className="rounded-lg shadow-xl"
                 width={500}

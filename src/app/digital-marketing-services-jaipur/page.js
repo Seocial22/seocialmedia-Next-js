@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-google-ads.jpg",
+        url: "https://seocialmedia.in/images/og-google-ads.webp",
         width: 1200,
         height: 630,
         alt: "Google Ads Jaipur OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Best Google Ads Company in Jaipur | SEOcial Media",
     description:
       "SEOcial Media is a trusted digital marketing company in Jaipur helping businesses increase visibility and conversions.",
-    images: ["https://seocialmedia.in/images/og-google-ads.jpg"],
+    images: ["https://seocialmedia.in/images/og-google-ads.webp"],
   },
 };
 

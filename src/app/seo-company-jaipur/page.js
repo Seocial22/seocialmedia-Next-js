@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-seo-company.jpg",
+        url: "https://seocialmedia.in/images/og-seo-company.webp",
         width: 1200,
         height: 630,
         alt: "SEO Company Jaipur OG Image",
@@ -35,7 +35,7 @@ export const metadata = {
     title: "SEO Company in Jaipur | SEOcial Media Solutions",
     description:
       "Professional SEO services in Jaipur – on-page, off-page, and local SEO to help your business rank higher in search engines.",
-    images: ["https://seocialmedia.in/images/og-seo-company.jpg"],
+    images: ["https://seocialmedia.in/images/og-seo-company.webp"],
   },
 };
 
@@ -47,7 +47,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional SEO services in Jaipur including on-page SEO, off-page SEO, local SEO, technical SEO, and SEO strategy.",
   url: "https://seocialmedia.in/seo-company-jaipur",
-  image: "https://seocialmedia.in/images/og-seo-company.jpg",
+  image: "https://seocialmedia.in/images/og-seo-company.webp",
   provider: {
     "@type": "Organization",
     name: "SEOcial Media Solutions",

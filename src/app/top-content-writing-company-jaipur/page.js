@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-content-writing.jpg",
+        url: "https://seocialmedia.in/images/og-content-writing.webp",
         width: 1200,
         height: 630,
         alt: "Content Writing Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Top Content Writing Company in Jaipur | SEOcial Media Solutions",
     description:
       "Professional content writing services in Jaipur – SEO content, blogs, website copy, and marketing content to grow your business.",
-    images: ["https://seocialmedia.in/images/og-content-writing.jpg"],
+    images: ["https://seocialmedia.in/images/og-content-writing.webp"],
   },
 };
 

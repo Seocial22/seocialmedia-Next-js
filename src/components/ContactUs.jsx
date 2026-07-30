@@ -355,7 +355,7 @@ const ContactForm = () => {
             >
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/contact-us.jpg"
+                  src="/images/contact-us.webp"
                   alt="Contact illustration"
                   width={800}
                   height={800}

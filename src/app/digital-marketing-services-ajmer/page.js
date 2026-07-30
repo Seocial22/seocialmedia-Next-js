@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-digital-marketing.jpg",
+        url: "https://seocialmedia.in/images/og-digital-marketing.webp",
         width: 1200,
         height: 630,
         alt: "Digital Marketing Ajmer OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Digital Marketing Services in Ajmer | SEOcial Media Solutions",
     description:
       "Professional digital marketing agency in Ajmer offering SEO, social media marketing, PPC, and content marketing services for businesses.",
-    images: ["https://seocialmedia.in/images/og-digital-marketing.jpg"],
+    images: ["https://seocialmedia.in/images/og-digital-marketing.webp"],
   },
 };
 

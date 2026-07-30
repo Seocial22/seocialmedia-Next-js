@@ -9,7 +9,7 @@ export default function AppHeroSection()
     const slides = [
         {
             id: 1,
-            image: '/images/service-management.jpg', // Replace with your hero image
+            image: '/images/service-management.webp', // Replace with your hero image
             title: 'Service Management App',
             subtitle: 'Intelligent Ecosystem for Modern Service Delivery',
             description: 'Transform your service operations with AI-powered coordination, real-time collaboration, and automated workflows that elevate client experiences, empower employees, and give admins unprecedented control.',
@@ -17,8 +17,8 @@ export default function AppHeroSection()
         },
         {
             id: 2,
-            image: '/images/real-time-chat.jpg',
-            imageMobile: '/images/real-time-chat.jpg',
+            image: '/images/real-time-chat.webp',
+            imageMobile: '/images/real-time-chat.webp',
             title: 'Real-Time Interaction & Communication',
             subtitle: 'Multi-Party Chat, Smart Notifications & Media Sharing',
             description: 'Seamlessly communicate with clients, employees, and admins with live chat, typing indicators, rich media sharing, intelligent routing, and AI-powered chatbot support.',
@@ -27,7 +27,7 @@ export default function AppHeroSection()
         },
         {
             id: 3,
-            image: '/images/advance-tracking.jpg',
+            image: '/images/advance-tracking.webp',
             title: 'Advanced Tracking & Analytics',
             subtitle: 'Data-Driven Insights for Service Performance',
             description: 'Monitor service progress, user behavior, employee productivity, and predictive KPIs through interactive dashboards and AI-powered analytics.',
@@ -35,7 +35,7 @@ export default function AppHeroSection()
         },
         {
             id: 4,
-            image: '/images/intellegent-automation.jpg',
+            image: '/images/intellegent-automation.webp',
             title: 'Intelligent Automation & Workflows',
             subtitle: 'Automate Tasks, Templates & Communication',
             description: 'Leverage AI-driven task assignment, template auto-generation, appointment scheduling, and automated feedback collection to streamline operations.',
@@ -43,7 +43,7 @@ export default function AppHeroSection()
         },
         {
             id: 5,
-            image: '/images/clint-employ.jpg',
+            image: '/images/clint-employ.webp',
             title: 'Comprehensive Client & Employee Portals',
             subtitle: 'Empower Teams and Clients with Self-Service',
             description: 'Clients track service progress, manage subscriptions, and communicate in real-time. Employees receive AI-prioritized tasks, workflow guidance, and file management tools.',
@@ -51,7 +51,7 @@ export default function AppHeroSection()
         },
         {
             id: 7,
-            image: '/images/event-notifeaction.jpg',
+            image: '/images/event-notifeaction.webp',
             title: 'Event & Notification System',
             subtitle: 'Schedule, Notify, and Collaborate Effectively',
             description: 'Organize events, set reminders, attach multimedia notes, and send personalized notifications to stakeholders with real-time updates.',

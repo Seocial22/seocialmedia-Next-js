@@ -107,7 +107,7 @@ const GoogleBusinessServices = () => {
     {
       title: "Profile Setup & Optimization",
       description: "Complete setup and optimization of your Google Business Profile. We ensure all business information is accurate, complete, and optimized for maximum local search visibility.",
-      image: "/images/gbp-setup.jpg",
+      image: "/images/gbp-setup.webp",
       benefits: [
         "Complete profile setup",
         "Keyword optimization",
@@ -118,7 +118,7 @@ const GoogleBusinessServices = () => {
     {
       title: "Review Management",
       description: "Comprehensive review monitoring and response service. We help build and maintain your online reputation through professional review management.",
-      image: "/images/review.jpg",
+      image: "/images/review.webp",
       benefits: [
         "Review monitoring",
         "Response management",
@@ -129,7 +129,7 @@ const GoogleBusinessServices = () => {
     {
       title: "Content Management",
       description: "Regular updates and content posting to keep your profile active and engaging. We create and manage posts, photos, and special offers.",
-      image: "/images/content.jpg",
+      image: "/images/content.webp",
       benefits: [
         "Regular updates",
         "Photo optimization",
@@ -140,7 +140,7 @@ const GoogleBusinessServices = () => {
     {
       title: "Performance Analytics",
       description: "Detailed tracking and analysis of your profile's performance. Get insights into customer behavior, search visibility, and engagement metrics.",
-      image: "/images/analytics.jpg",
+      image: "/images/analytics.webp",
       benefits: [
         "Search insights",
         "Customer behavior",

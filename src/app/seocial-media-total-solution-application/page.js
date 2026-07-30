@@ -22,7 +22,7 @@ export const metadata = {
         siteName: "SEOcial Media Solutions",
         images: [
             {
-                url: "https://seocialmedia.in//images/og-client-management.jpg",
+                url: "https://seocialmedia.in//images/og-client-management.webp",
                 width: 1200,
                 height: 630,
                 alt: "Top Client Management App",
@@ -35,7 +35,7 @@ export const metadata = {
         title: "Top Client Management App | Automated Services",
         description:
             "Simplify your business operations with our top client management app. Automate services and manage clients effortlessly.",
-        images: ["https://seocialmedia.in/images/og-client-management.jpg"],
+        images: ["https://seocialmedia.in/images/og-client-management.webp"],
     },
 };
 

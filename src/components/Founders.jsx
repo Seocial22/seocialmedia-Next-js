@@ -6,7 +6,7 @@ export const Founders = () => {
     {
       name: "Mudit Mathur",
       role: "Co-Founder & CEO",
-      image: "/images/founders/muditmathur.jpg",
+      image: "/images/founders/muditmathur.webp",
       bio: "A dynamic entrepreneur with over 12 years of cross-industry expertise spanning Banking, Pharmaceuticals, Hospitality, and Digital Marketing. Mudit brings a unique blend of strategic thinking and hands-on execution to drive measurable results for our healthcare clients.",
       education: [
         "MSc Digital Marketing & Channel Management - University of Surrey, UK",
@@ -20,7 +20,7 @@ export const Founders = () => {
     {
       name: "Kushagra Parashar",
       role: "Co-Founder & CEO",
-      image: "/images/founders/kushagra-parasher.jpg",
+      image: "/images/founders/kushagra-parasher.webp",
       bio: "A highly accomplished and results-driven entrepreneur with over 16 years of experience across Pest Control, Digital Marketing, and Technology. Kushagra Parashar brings a strong foundation in Software Engineering and business strategy, combining technical expertise with practical execution to deliver measurable results. Known for driving innovation, optimizing operations, and creating scalable growth strategies, along with extensive experience in managing teams and handling diverse client portfolios, the focus remains on delivering high-impact solutions for businesses across industries, including healthcare and commercial sectors.",
       education: [
         "Bachelor of Science in Information Technology (B.Sc IT)",

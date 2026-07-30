@@ -114,25 +114,25 @@ const SeoJaipur = () => {
       title: "SEO Audit",
       description:
         "In-depth audit of your website's technical health, on-page elements, and backlink profile to identify critical issues and uncover opportunities for scalable growth.",
-      image: "/images/onpage-seo.jpg",
+      image: "/images/onpage-seo.webp",
     },
     {
       title: "Content Creation",
       description:
         "Strategic, SEO-driven content creation tailored to your audience—designed to educate, engage, and rank. We focus on quality storytelling combined with keyword intent.",
-      image: "/images/content-strategy.jpg",
+      image: "/images/content-strategy.webp",
     },
     {
       title: "Technical SEO",
       description:
         "Advanced optimization of site speed, mobile-friendliness, structured data, crawlability, and indexation to ensure peak performance across search engines.",
-      image: "/images/technical-seo.jpg",
+      image: "/images/technical-seo.webp",
     },
     {
       title: "Local SEO",
       description:
         "Laser-focused local SEO strategies including Google Business Profile optimization, local citations, and location-specific content to boost visibility in your area.",
-      image: "/images/seo.jpg",
+      image: "/images/seo.webp",
     },
   ];
 

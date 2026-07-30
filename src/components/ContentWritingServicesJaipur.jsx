@@ -126,7 +126,7 @@ const ContentWritingServicesJaipur = () => {
       title: "Website Content",
       description:
         "Craft SEO-rich, persuasive website copy that not only ranks but converts. Our skilled writers tailor your content to resonate with your audience and reflect your brand’s voice, while ensuring full optimization for search engines.",
-      image: "/images/website-content.jpg",
+      image: "/images/website-content.webp",
       benefits: [
         "Boost in organic search visibility",
         "Stronger conversion potential",
@@ -150,7 +150,7 @@ const ContentWritingServicesJaipur = () => {
       title: "Technical Content",
       description:
         "Make complex information accessible with clear, concise technical writing. Our specialists produce user guides, documentation, and tutorials that simplify learning while retaining technical accuracy.",
-      image: "/images/technical-content.jpg",
+      image: "/images/technical-content.webp",
       benefits: [
         "Simplifies complex concepts",
         "Minimizes customer support queries",
@@ -162,7 +162,7 @@ const ContentWritingServicesJaipur = () => {
       title: "Marketing Copy",
       description:
         "Drive action and conversions with high-impact marketing copy. Whether it’s for ads, email campaigns, or product pages, we create compelling content that inspires, persuades, and delivers results.",
-      image: "/images/marketing.jpg",
+      image: "/images/marketing.webp",
       benefits: [
         "Stronger brand messaging",
         "Higher click-through and conversion rates",
@@ -282,7 +282,7 @@ const ContentWritingServicesJaipur = () => {
                   >
                     <div className="h-64 overflow-hidden">
                       <Image
-                        src={service.image || "/images/placeholder.jpg"}
+                        src={service.image || "/images/placeholder.webp"}
                         alt={service.alt || service.title}
                         width={600} // A reasonable width for the service card
                         height={400} // A reasonable height, maintaining a 3:2 aspect ratio

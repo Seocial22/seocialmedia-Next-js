@@ -92,7 +92,7 @@ const SocialMediaServicesjaipurr = () => {
       title: "Social Media Management",
       description:
         "End-to-end management of your brand’s social media presence across all major platforms. Our expert team handles everything from strategic content planning and creation to community engagement, crisis response, and performance optimization — ensuring your brand stays active, responsive, and impactful.",
-      image: "/images/social-management.jpg",
+      image: "/images/social-management.webp",
       benefits: [
         "Consistent brand identity and voice",
         "Strategic content calendar & regular posting",
@@ -110,7 +110,7 @@ const SocialMediaServicesjaipurr = () => {
       title: "Content Creation",
       description:
         "High-quality visual and written content designed to captivate your audience and elevate your brand. Our creative team delivers stunning visuals, engaging videos, custom graphics, and compelling copy tailored to your brand’s voice and goals.",
-      image: "/images/marketing.jpg",
+      image: "/images/marketing.webp",
       benefits: [
         "Professional photography & video shoots",
         "Custom-branded graphic design",
@@ -134,7 +134,7 @@ const SocialMediaServicesjaipurr = () => {
       title: "Analytics & Reporting",
       description:
         "Make informed decisions with our comprehensive analytics and performance reporting. We provide monthly reports and real-time dashboards that track growth, engagement, ROI, and competitive performance — turning insights into actionable strategy.",
-      image: "/images/social-analytics.jpg",
+      image: "/images/social-analytics.webp",
       benefits: [
         "Detailed performance metrics & KPIs",
         "Competitor benchmarking",

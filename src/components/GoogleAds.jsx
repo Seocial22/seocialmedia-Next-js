@@ -90,25 +90,25 @@ const GoogleAdsServices = () => {
       title: "Search Campaigns",
       description:
         "Target potential customers actively searching for your products or services with strategic keyword campaigns.",
-      image: "/images/search-ads.jpg",
+      image: "/images/search-ads.webp",
     },
     {
       title: "Display Advertising",
       description:
         "Reach your audience across millions of websites with visually engaging display ads and precise targeting.",
-      image: "/images/display-ads.jpg",
+      image: "/images/display-ads.webp",
     },
     {
       title: "Shopping Campaigns",
       description:
         "Showcase your products directly in Google search results with optimized shopping campaigns.",
-      image: "/images/shopping-ads.jpg",
+      image: "/images/shopping-ads.webp",
     },
     {
       title: "Performance Analysis",
       description:
         "Comprehensive tracking and optimization of your campaigns for maximum ROI and conversion rates.",
-      image: "/images/analytics.jpg",
+      image: "/images/analytics.webp",
     },
   ];
 

@@ -86,14 +86,14 @@ export default function VideoEditingAjmer() {
       title: "Submit Your Footage",
       description:
         "Upload your raw footage, along with your instructions, or schedule a call to discuss your vision.",
-      image: "/images/process/submit.jpg",
+      image: "/images/process/submit.webp",
     },
     {
       number: "02",
       title: "Editing",
       description:
         "Our expert editors apply the edits, effects, and enhancements you’ve requested.",
-      image: "/images/process/editing.jpg",
+      image: "/images/process/editing.webp",
     },
     {
       number: "03",
@@ -107,7 +107,7 @@ export default function VideoEditingAjmer() {
       title: "Final Delivery",
       description:
         "Your video is delivered in your chosen format and resolution, ready to share.",
-      image: "/images/process/delivery.jpg",
+      image: "/images/process/delivery.webp",
     },
   ];
 
@@ -157,13 +157,13 @@ export default function VideoEditingAjmer() {
       name: "Promotional Videos",
       description:
         "Boost campaigns with high-impact promotional videos that drive conversions.",
-      image: "/images/services/promotional.jpeg",
+      image: "/images/services/promotional.webp",
     },
     {
       name: "Event Coverage",
       description:
         "Relive your special moments with beautifully edited event coverage.",
-      image: "/images/services/event.jpg",
+      image: "/images/services/event.webp",
     },
     {
       name: "Animation & Motion Graphics",

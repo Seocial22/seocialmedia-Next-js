@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-google-business.jpg",
+        url: "https://seocialmedia.in/images/og-google-business.webp",
         width: 1200,
         height: 630,
         alt: "Google Business Profile Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Google Business Profile Services in Jaipur | SEOcial Media Solutions",
     description:
       "Enhance your local SEO and online visibility with professional Google Business Profile management services in Jaipur.",
-    images: ["https://seocialmedia.in/images/og-google-business.jpg"],
+    images: ["https://seocialmedia.in/images/og-google-business.webp"],
   },
 };
 

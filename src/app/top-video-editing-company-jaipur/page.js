@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-video-editing.jpg",
+        url: "https://seocialmedia.in/images/og-video-editing.webp",
         width: 1200,
         height: 630,
         alt: "Video Editing Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Top Video Editing Company in Jaipur | SEOcial Media Solutions",
     description:
       "Professional video editing services in Jaipur – post-production, motion graphics, and promotional videos to elevate your brand.",
-    images: ["https://seocialmedia.in/images/og-video-editing.jpg"],
+    images: ["https://seocialmedia.in/images/og-video-editing.webp"],
   },
 };
 

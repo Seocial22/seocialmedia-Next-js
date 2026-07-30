@@ -249,7 +249,7 @@ const Home = () => {
     "@type": "Organization",
     name: "SEOcial Media Solutions",
     url: "https://www.seocialmedia.in/",
-    logo: "https://www.seocialmedia.in/images/company-logo.jpeg",
+    logo: "https://www.seocialmedia.in/images/company-logo.webp",
   };
 
   return (

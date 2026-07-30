@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-lead-generation.jpg",
+        url: "https://seocialmedia.in/images/og-lead-generation.webp",
         width: 1200,
         height: 630,
         alt: "Lead Generation Jaipur OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Lead Generation Company in Jaipur | SEOcial Media",
     description:
       "Generate high quality B2B and B2C leads with Jaipur's trusted lead generation and performance marketing company.",
-    images: ["https://seocialmedia.in/images/og-lead-generation.jpg"],
+    images: ["https://seocialmedia.in/images/og-lead-generation.webp"],
   },
 };
 
@@ -45,7 +45,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional lead generation services in Jaipur, helping businesses generate high-quality B2B and B2C leads through performance marketing, Google Ads, Meta Ads, and digital marketing strategies.",
   url: "https://seocialmedia.in/lead-generation-company-jaipur",
-  image: "https://seocialmedia.in/images/og-lead-generation.jpg",
+  image: "https://seocialmedia.in/images/og-lead-generation.webp",
   serviceType: "Lead Generation Services",
   areaServed: {
     "@type": "City",

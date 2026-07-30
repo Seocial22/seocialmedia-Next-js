@@ -110,7 +110,7 @@ const ContentWritingServices = () => {
     {
       title: "Website Content",
       description: "Engaging and SEO-optimized content that converts visitors into customers. Our expert writers craft compelling website copy that speaks directly to your target audience while following SEO best practices.",
-      image: "/images/website-content.jpg",
+      image: "/images/website-content.webp",
       benefits: [
         "Increased organic traffic",
         "Higher conversion rates",
@@ -132,7 +132,7 @@ const ContentWritingServices = () => {
     {
       title: "Technical Content",
       description: "Clear and accurate technical documentation, guides, and tutorials. Our technical writers break down complex subjects into easy-to-understand content while maintaining accuracy and detail.",
-      image: "/images/technical-content.jpg",
+      image: "/images/technical-content.webp",
       benefits: [
         "Simplified complex topics",
         "Reduced support queries",
@@ -143,7 +143,7 @@ const ContentWritingServices = () => {
     {
       title: "Marketing Copy",
       description: "Persuasive copy for advertisements, emails, and marketing materials. Our copywriters create compelling messages that drive action and generate results across all marketing channels.",
-      image: "/images/marketing.jpg",
+      image: "/images/marketing.webp",
       benefits: [
         "Higher conversion rates",
         "Improved brand messaging",
@@ -264,7 +264,7 @@ const ContentWritingServices = () => {
                   >
                     <div className="h-64 overflow-hidden">
                       <Image
-                        src={service.image || "/images/placeholder.jpg"}
+                        src={service.image || "/images/placeholder.webp"}
                         alt={service.alt || service.title}
                         width={600} // A reasonable width for the service card
                         height={400} // A reasonable height, maintaining a 3:2 aspect ratio

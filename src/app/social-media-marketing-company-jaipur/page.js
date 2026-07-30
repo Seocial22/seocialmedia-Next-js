@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-smm.jpg",
+        url: "https://seocialmedia.in/images/og-smm.webp",
         width: 1200,
         height: 630,
         alt: "Social Media Marketing Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Social Media Marketing Company in Jaipur | SEOcial Media Solutions",
     description:
       "Professional social media marketing services in Jaipur – Facebook, Instagram, LinkedIn, and Twitter marketing to grow your business.",
-    images: ["https://seocialmedia.in/images/og-smm.jpg"],
+    images: ["https://seocialmedia.in/images/og-smm.webp"],
   },
 };
 

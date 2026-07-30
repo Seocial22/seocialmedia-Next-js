@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-ecommerce-listing.jpg",
+        url: "https://seocialmedia.in/images/og-ecommerce-listing.webp",
         width: 1200,
         height: 630,
         alt: "Multi-Platform E-commerce Listing Service",
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Top E-commerce Listing Service Jaipur | SEOcial Media",
     description:
       "Professional eCommerce listing services in Jaipur for Amazon, Flipkart, Meesho and other online marketplaces.",
-    images: ["https://seocialmedia.in/images/og-ecommerce-listing.jpg"],
+    images: ["https://seocialmedia.in/images/og-ecommerce-listing.webp"],
   },
 };
 
@@ -47,7 +47,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional eCommerce listing services in Jaipur for Amazon, Flipkart, Meesho, Shopify, Myntra, IndiaMart, and other online marketplaces. We optimize product listings to improve visibility, rankings, and sales.",
   url: "https://seocialmedia.in/ecommerce-listing-service-jaipur",
-  image: "https://seocialmedia.in/images/og-ecommerce-listing.jpg",
+  image: "https://seocialmedia.in/images/og-ecommerce-listing.webp",
   serviceType: "E-commerce Listing Services",
   areaServed: {
     "@type": "City",

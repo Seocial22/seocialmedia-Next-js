@@ -103,22 +103,22 @@ const SeoAjmerpage = () => {
     {
       title: "SEO Audit",
       description: "We check your website to find and fix issues that affect your Google ranking and performance.",
-      image: "/images/onpage-seo.jpg"
+      image: "/images/onpage-seo.webp"
     },
     {
       title: "Content Creation",
       description: "We create helpful and keyword-rich content that educates users and improves your search visibility.",
-      image: "/images/content-strategy.jpg"
+      image: "/images/content-strategy.webp"
     },
     {
       title: "Technical SEO",
       description: "We improve your website’s speed, structure, and user experience so search engines can find it easily.",
-      image: "/images/technical-seo.jpg"
+      image: "/images/technical-seo.webp"
     },
     {
       title: "Local SEO",
       description: "We help your business show up in local searches and attract nearby customers.",
-      image: "/images/seo.jpg"
+      image: "/images/seo.webp"
     }
   ];
 

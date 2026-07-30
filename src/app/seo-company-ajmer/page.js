@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-seo-company.jpg",
+        url: "https://seocialmedia.in/images/og-seo-company.webp",
         width: 1200,
         height: 630,
         alt: "SEO Company Ajmer OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "SEO Company in Ajmer | SEOcial Media Solutions",
     description:
       "Professional SEO services in Ajmer – on-page, off-page, and local SEO to help your business rank higher in search engines.",
-    images: ["https://seocialmedia.in/images/og-seo-company.jpg"],
+    images: ["https://seocialmedia.in/images/og-seo-company.webp"],
   },
 };
 

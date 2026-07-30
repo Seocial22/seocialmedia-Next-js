@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-contact.jpg",
+        url: "https://seocialmedia.in/images/og-contact.webp",
         width: 1200,
         height: 630,
         alt: "Contact SEOcial Media OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Contact SEOcial Media | Digital Marketing Jaipur",
     description:
       "Contact SEOcial Media in Jaipur for SEO, website development, Google Ads and social media marketing services.",
-    images: ["https://seocialmedia.in/images/og-contact.jpg"],
+    images: ["https://seocialmedia.in/images/og-contact.webp"],
   },
 };
 export default function Home() {

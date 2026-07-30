@@ -70,14 +70,14 @@ export async function generateMetadata({ params }) {
         image: `https://seocialmedia.in${blog.image}`,
         author: {
           "@type": "Person",
-          name: blog.author || "Gaurnish Health",
+          name: blog.author || "Seocial Media Solution",
         },
         publisher: {
           "@type": "Organization",
-          name: "Gaurnish Health",
+          name: "Seocial Media Solution",
           logo: {
             "@type": "ImageObject",
-            url: "https://seocialmedia.in/logo.png",
+            url: "https://seocialmedia.in/images/company-logo.webp",
           },
         },
         datePublished: blog.date,
@@ -207,7 +207,7 @@ export default async function SingleBlogPage({ params }) {
       {/* Hero section with image */}
     <div className=" mt-10 relative aspect-[3/2] md:aspect-[3/1.5]     max-w-6xl mx-auto">
         <Image
-          src={blog.image || "/images/placeholder.jpg"}
+          src={blog.image || "/images/placeholder.webp"}
           alt={blog.alt || blog.title}
           fill
           priority

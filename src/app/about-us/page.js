@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-home.jpg",
+        url: "https://seocialmedia.in/images/og-home.webp",
         width: 1200,
         height: 630,
         alt: "SEOcial Media OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "About SEOcial Media Solutions | Accelerating Digital Growth",
     description:
       "Meet SEOcial Media Solutions - driving business transformation through data-backed SEO, high-ROI paid ads, and full-funnel digital strategy across India.",
-    images: ["https://seocialmedia.in/images/og-home.jpg"],
+    images: ["https://seocialmedia.in/images/og-home.webp"],
   },
 };
 

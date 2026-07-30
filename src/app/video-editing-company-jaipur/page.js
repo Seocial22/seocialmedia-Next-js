@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-video-editing.jpg",
+        url: "https://seocialmedia.in/images/og-video-editing.webp",
         width: 1200,
         height: 630,
         alt: "Video Editing Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Video Editing Company in Jaipur | SEOcial Media Solutions",
     description:
       "Professional video editing services in Jaipur – motion graphics, post-production, and promotional videos to boost your brand.",
-    images: ["https://seocialmedia.in/images/og-video-editing.jpg"],
+    images: ["https://seocialmedia.in/images/og-video-editing.webp"],
   },
 };
 
@@ -46,7 +46,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional video editing services in Jaipur, including promotional videos, motion graphics, post-production, social media video editing, corporate videos, and brand video creation.",
   url: "https://seocialmedia.in/video-editing-company-jaipur",
-  image: "https://seocialmedia.in/images/og-video-editing.jpg",
+  image: "https://seocialmedia.in/images/og-video-editing.webp",
   serviceType: "Video Editing Services",
   areaServed: {
     "@type": "City",

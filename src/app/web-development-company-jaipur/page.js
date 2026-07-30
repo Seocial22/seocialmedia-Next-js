@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-web-development.jpg",
+        url: "https://seocialmedia.in/images/og-web-development.webp",
         width: 1200,
         height: 630,
         alt: "Web Development Jaipur OG Image",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Web Development Company in Jaipur | SEOcial Media",
     description:
       "Leading web development company in Jaipur creating responsive websites, eCommerce stores and custom business portals.",
-    images: ["https://seocialmedia.in/images/og-web-development.jpg"],
+    images: ["https://seocialmedia.in/images/og-web-development.webp"],
   },
 };
 
@@ -45,7 +45,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional web development services in Jaipur, including responsive website development, eCommerce websites, custom web applications, business portals, and website maintenance.",
   url: "https://seocialmedia.in/web-development-company-jaipur",
-  image: "https://seocialmedia.in/images/og-web-development.jpg",
+  image: "https://seocialmedia.in/images/og-web-development.webp",
   serviceType: "Web Development Services",
   areaServed: {
     "@type": "City",

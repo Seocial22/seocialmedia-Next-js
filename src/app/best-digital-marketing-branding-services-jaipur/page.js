@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-digital-marketing.jpg",
+        url: "https://seocialmedia.in/images/og-digital-marketing.webp",
         width: 1200,
         height: 630,
         alt: "Digital Marketing Services in Jaipur",
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Best Brand Management Service in Jaipur | SEOcial",
     description:
       "Build your brand identity with digital marketing, social media management and branding services in Jaipur.",
-    images: ["https://seocialmedia.in/images/og-digital-marketing.jpg"],
+    images: ["https://seocialmedia.in/images/og-digital-marketing.webp"],
   },
 };
 
@@ -48,7 +48,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides digital marketing and brand management services in Jaipur including SEO, social media marketing, website development, content creation, paid advertising, branding, and video editing.",
   url: "https://seocialmedia.in/best-digital-marketing-branding-services-jaipur",
-  image: "https://seocialmedia.in/images/og-digital-marketing.jpg",
+  image: "https://seocialmedia.in/images/og-digital-marketing.webp",
   serviceType: "Brand Management Services",
   areaServed: {
     "@type": "City",

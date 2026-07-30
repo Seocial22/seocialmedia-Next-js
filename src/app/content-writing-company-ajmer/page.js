@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-content-writing.jpg",
+        url: "https://seocialmedia.in/images/og-content-writing.webp",
         width: 1200,
         height: 630,
         alt: "Content Writing Ajmer OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Content Writing Company in Ajmer | SEOcial Media Solutions",
     description:
       "Professional content writing services in Ajmer – blogs, website copy, SEO content, and marketing materials to boost your business.",
-    images: ["https://seocialmedia.in/images/og-content-writing.jpg"],
+    images: ["https://seocialmedia.in/images/og-content-writing.webp"],
   },
 };
 

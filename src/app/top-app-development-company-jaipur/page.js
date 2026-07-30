@@ -19,7 +19,7 @@ export const metadata = {
         siteName: "SEOcial Media Solutions",
         images: [
             {
-                url: "https://seocialmedia.in/images/og-app-development.jpg",
+                url: "https://seocialmedia.in/images/og-app-development.webp",
                 width: 1200,
                 height: 630,
                 alt: "App Development Company in Jaipur",
@@ -32,7 +32,7 @@ export const metadata = {
         title: "Top App Development Company in Jaipur | SEOcial Media",
         description:
             "Top app development company in Jaipur building Android, iOS and hybrid mobile applications for startups and enterprises.",
-        images: ["https://seocialmedia.in/images/og-app-development.jpg"],
+        images: ["https://seocialmedia.in/images/og-app-development.webp"],
     },
 };
 
@@ -44,7 +44,7 @@ const generateStructuredData = () => ({
     description:
         "SEOcial Media Solutions provides professional app development services in Jaipur, including Android app development, iOS app development, hybrid app development, cross-platform mobile applications, and custom business app solutions.",
     url: "https://seocialmedia.in/top-app-development-company-jaipur",
-    image: "https://seocialmedia.in/images/og-app-development.jpg",
+    image: "https://seocialmedia.in/images/og-app-development.webp",
     serviceType: "App Development Services",
     areaServed: {
         "@type": "City",

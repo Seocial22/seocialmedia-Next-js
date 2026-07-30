@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "SEOcial Media Solutions",
     images: [
       {
-        url: "https://seocialmedia.in/images/og-smm.jpg",
+        url: "https://seocialmedia.in/images/og-smm.webp",
         width: 1200,
         height: 630,
         alt: "Social Media Marketing Jaipur OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Social Media Marketing in Jaipur | SEOcial Media",
     description:
       "Grow your audience with social media marketing services in Jaipur across Facebook, Instagram and LinkedIn.",
-    images: ["https://seocialmedia.in/images/og-smm.jpg"],
+    images: ["https://seocialmedia.in/images/og-smm.webp"],
   },
 };
 
@@ -46,7 +46,7 @@ const generateStructuredData = () => ({
   description:
     "SEOcial Media Solutions provides professional social media marketing services in Jaipur, helping businesses grow through Facebook, Instagram, LinkedIn, X, and other social media platforms.",
   url: "https://seocialmedia.in/social-media-marketing-jaipur",
-  image: "https://seocialmedia.in/images/og-smm.jpg",
+  image: "https://seocialmedia.in/images/og-smm.webp",
   serviceType: "Social Media Marketing",
   areaServed: {
     "@type": "City",
