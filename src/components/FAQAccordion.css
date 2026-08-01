@@ -1,0 +1,57 @@
+/* Shared CSS for FAQAccordion / FAQAccordionnew.
+   Replaces framer-motion entirely — no animation JS shipped. */
+
+/* Entrance fade-up: plays once on mount, staggered via inline
+   animation-delay (set per item from the component). */
+@keyframes faqFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq-fade-in {
+  animation: faqFadeUp 0.6s ease-out both;
+}
+
+/* Chevron rotate on open/close */
+.faq-chevron {
+  transition: transform 0.2s ease;
+}
+
+.faq-chevron.faq-chevron-open {
+  transform: rotate(180deg);
+}
+
+/* Accordion expand/collapse using the CSS grid-template-rows trick.
+   This animates smoothly to the panel's natural (auto) height without
+   needing JS to measure it, and without keeping/removing the node from
+   the DOM the way AnimatePresence did. */
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease-out;
+}
+
+.faq-panel.faq-panel-open {
+  grid-template-rows: 1fr;
+}
+
+.faq-panel > div {
+  overflow: hidden;
+  min-height: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-fade-in {
+    animation: none;
+  }
+  .faq-chevron,
+  .faq-panel {
+    transition: none;
+  }
+}

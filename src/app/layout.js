@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer.jsx";
 import FloatingContact from "@/components/FloatingContact.jsx";
-import NeonCursor from "@/components/NeonCursor";
+// import NeonCursor from "@/components/NeonCursor";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <GoogleAnalytics gaId="G-FN7N5K1Y8L" />
-        <NeonCursor />
+        {/* <NeonCursor /> */}
         <FloatingContact />
         <Footer />
       </body>

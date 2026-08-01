@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Sparkles } from "lucide-react";
 import Link from "next/link";
 
-import HeroSection from "./HomeHero";
+import HomeHeroSection from "./HomeHero";
 import ProductServicesPage from "./ProductServicesPage";
 import ServicesCarousel from "./ServicesCarousel";
 import GoogleMap from "./GoogleMap";
@@ -273,7 +273,7 @@ const HomePage = () => {
 
       <div className="relative">
         <h1 className="hidden">Best Digital Marketing Agency in Jaipur</h1>
-        <HeroSection />
+        <HomeHeroSection />
         <ProductServicesPage />
         <ServicesCarousel />
         {/* <Allservices/> */}

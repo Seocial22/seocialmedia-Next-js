@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import WorkShowcase from "./WorkShowcase";
 import MarketingGrid from "./MarketingGrid";
 
@@ -29,79 +29,33 @@ const cardVariants = {
   },
 };
 
-// ✅ Interactive 3D CTA Box Component
+// ✅ CTA Box — mouse-tilt, ambient orb animation and hover shimmer removed.
+// Box is now static; only plain CSS hover states remain (button, icons).
 const InteractiveCTABox = () => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
-  // Gentle 3D tilt for the entire CTA banner (max 4 degrees)
-  const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [4, -4]), { stiffness: 100, damping: 25 });
-  const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-4, 4]), { stiffness: 100, damping: 25 });
-
-  const handleMouseMove = (event) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    x.set((event.clientX - rect.left) / rect.width - 0.5);
-    y.set((event.clientY - rect.top) / rect.height - 0.5);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
   return (
-    <div className="perspective-[1500px] w-full mt-16 z-20">
-      <motion.div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        style={{
-          rotateX,
-          rotateY,
-          transformStyle: "preserve-3d",
-          willChange: "transform",
-        }}
-        className="w-full bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 md:p-12 shadow-[0_20px_50px_rgba(79,70,229,0.25)] hover:shadow-[0_30px_70px_rgba(99,102,241,0.4)] border border-indigo-500/20 transition-all duration-500 relative overflow-hidden group cursor-default"
+    <div className="w-full mt-16 z-20">
+      <div
+        className="w-full bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 rounded-3xl p-8 md:p-12 shadow-[0_20px_50px_rgba(79,70,229,0.25)] border border-indigo-500/20 relative overflow-hidden cursor-default"
       >
-        {/* Luminous Ambient Background Orbs */}
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 40, 0],
-            y: [0, -30, 0],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-20 -right-20 w-80 h-80 bg-indigo-500/20 rounded-full filter blur-[80px] pointer-events-none"
-        />
-        <motion.div
-          animate={{
-            scale: [1, 1.1, 1],
-            x: [0, -30, 0],
-            y: [0, 40, 0],
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-500/20 rounded-full filter blur-[80px] pointer-events-none"
-        />
+        {/* Static ambient background accents (no longer animated) */}
+        <div className="absolute -top-20 -right-20 w-80 h-80 bg-indigo-500/20 rounded-full filter blur-[80px] pointer-events-none" />
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-500/20 rounded-full filter blur-[80px] pointer-events-none" />
 
-        {/* Premium Gloss Shimmer Sweep */}
-        <div className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 -translate-x-[150%] group-hover:translate-x-[100%] transition-transform duration-[1500ms] ease-out pointer-events-none z-10" />
+        <div className="max-w-3xl mx-auto text-center space-y-8 relative z-10">
 
-        <div className="max-w-3xl mx-auto text-center space-y-8 relative z-10" style={{ transform: "translateZ(20px)" }}>
-          
           {/* Sparkles & Heading */}
           <div className="relative">
             <Sparkles className="absolute -top-6 -left-6 w-8 h-8 text-yellow-300 animate-bounce" />
             <Sparkles className="absolute -top-6 -right-6 w-8 h-8 text-yellow-300 animate-bounce" style={{ animationDelay: "0.5s" }} />
 
             <div className="space-y-4">
-              <span 
-                style={{ transform: "translateZ(30px)" }}
+              <span
                 className="text-xs uppercase font-extrabold tracking-widest text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full border border-yellow-400/20 w-fit mx-auto block"
               >
                 Limited Offer
               </span>
-              
-              <h2 
-                style={{ transform: "translateZ(35px)" }}
+
+              <h2
                 className="text-3xl md:text-5xl font-black text-white leading-tight filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.3)]"
               >
                 Get Your Customized Website
@@ -110,16 +64,14 @@ const InteractiveCTABox = () => {
                 </span>
               </h2>
 
-              <p 
-                style={{ transform: "translateZ(25px)" }}
+              <p
                 className="text-base md:text-lg text-slate-300 max-w-xl mx-auto font-medium leading-relaxed"
               >
                 Transform your online presence with our expert web development services.
               </p>
 
               {/* Feature list badges */}
-              <div 
-                style={{ transform: "translateZ(25px)" }}
+              <div
                 className="flex flex-wrap gap-3 justify-center text-white max-w-lg mx-auto font-semibold"
               >
                 <div className="flex items-center gap-2 bg-white/5 border border-white/5 px-3 py-1.5 rounded-full backdrop-blur-sm">
@@ -140,8 +92,7 @@ const InteractiveCTABox = () => {
 
           {/* Grid of 3 highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-white/90">
-            <div 
-              style={{ transform: "translateZ(30px)" }}
+            <div
               className="bg-slate-950/40 border border-white/5 hover:border-white/10 p-5 rounded-2xl backdrop-blur-sm hover:bg-slate-950/60 transition-all duration-300 group/item"
             >
               <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mx-auto mb-3 group-hover/item:scale-110 transition-transform">
@@ -155,8 +106,7 @@ const InteractiveCTABox = () => {
               </p>
             </div>
 
-            <div 
-              style={{ transform: "translateZ(30px)" }}
+            <div
               className="bg-slate-950/40 border border-white/5 hover:border-white/10 p-5 rounded-2xl backdrop-blur-sm hover:bg-slate-950/60 transition-all duration-300 group/item"
             >
               <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mx-auto mb-3 group-hover/item:scale-110 transition-transform">
@@ -168,8 +118,7 @@ const InteractiveCTABox = () => {
               </p>
             </div>
 
-            <div 
-              style={{ transform: "translateZ(30px)" }}
+            <div
               className="bg-slate-950/40 border border-white/5 hover:border-white/10 p-5 rounded-2xl backdrop-blur-sm hover:bg-slate-950/60 transition-all duration-300 group/item"
             >
               <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-3 group-hover/item:scale-110 transition-transform">
@@ -181,7 +130,7 @@ const InteractiveCTABox = () => {
           </div>
 
           {/* CTA Button */}
-          <div style={{ transform: "translateZ(40px)" }} className="pt-2">
+          <div className="pt-2">
             <Link
               href="/contact"
               className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-slate-950 px-8 py-4 rounded-full font-black text-base hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/20 transition-all duration-300 flex items-center gap-2 mx-auto group w-fit shadow-lg shadow-yellow-500/10"
@@ -192,7 +141,7 @@ const InteractiveCTABox = () => {
           </div>
 
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
@@ -200,50 +149,12 @@ const InteractiveCTABox = () => {
 const ProductServicesPage = () => {
   return (
     <div className="relative min-h-screen overflow-hidden pt-8 pb-8 bg-gradient-to-br from-gray-50 to-gray-100">
-      
-      {/* Dynamic Animated Background Blobs */}
+
+      {/* Static background accents — no longer continuously animated */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <motion.div
-          animate={{
-            scale: [1, 1.1, 0.9, 1],
-            x: [0, 30, -20, 0],
-            y: [0, 40, 20, 0],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute top-0 left-0 w-72 h-72 bg-blue-200/50 rounded-full filter blur-[80px]"
-        />
-        <motion.div
-          animate={{
-            scale: [1, 0.9, 1.1, 1],
-            x: [0, -40, 20, 0],
-            y: [0, -30, -50, 0],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2,
-          }}
-          className="absolute top-10 right-10 w-72 h-72 bg-yellow-200/40 rounded-full filter blur-[80px]"
-        />
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 0.8, 1],
-            x: [0, 20, -30, 0],
-            y: [0, -20, 30, 0],
-          }}
-          transition={{
-            duration: 14,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 4,
-          }}
-          className="absolute -bottom-10 left-20 w-72 h-72 bg-pink-200/40 rounded-full filter blur-[80px]"
-        />
+        <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200/50 rounded-full filter blur-[80px]" />
+        <div className="absolute top-10 right-10 w-72 h-72 bg-yellow-200/40 rounded-full filter blur-[80px]" />
+        <div className="absolute -bottom-10 left-20 w-72 h-72 bg-pink-200/40 rounded-full filter blur-[80px]" />
       </div>
 
       {/* Main Content Container */}
@@ -273,7 +184,7 @@ const ProductServicesPage = () => {
               </span>
             </h2>
           </motion.div>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -286,15 +197,14 @@ const ProductServicesPage = () => {
           </motion.p>
         </div>
 
-        {/* Services Grid with Custom Image Animations */}
-        <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-8 gap-4 mx-auto max-w-[1000px] perspective-[1000px]">
-          
+        {/* Services Grid — hover image animations and infinite floating removed */}
+        <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-8 gap-4 mx-auto max-w-[1000px]">
+
           {/* Product Strategy */}
           <motion.div
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             viewport={{ once: true }}
             className="md:col-span-2 md:row-span-5 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-purple-100"
           >
@@ -307,17 +217,9 @@ const ProductServicesPage = () => {
                 Crafting visionary blueprints to drive your product's success.
               </p>
             </div>
-            
-            <motion.div
-              variants={{
-                hover: { scale: 1.1, y: -10 }
-              }}
-              transition={{ type: "spring", stiffness: 150, damping: 20 }}
-              className="absolute left-0 right-0 bottom-0 h-1/2 pointer-events-none"
-            >
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+
+            <div className="absolute left-0 right-0 bottom-0 h-1/2 pointer-events-none">
+              <div
                 className="w-full h-full bg-cover bg-center opacity-90"
                 style={{
                   backgroundImage: 'url("images/grid.png")',
@@ -326,7 +228,7 @@ const ProductServicesPage = () => {
                   backgroundRepeat: "no-repeat",
                 }}
               />
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* UI & UX Design */}
@@ -334,7 +236,6 @@ const ProductServicesPage = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             viewport={{ once: true }}
             className="md:col-span-4 md:row-span-3 md:col-start-3 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-pink-400"
           >
@@ -348,20 +249,12 @@ const ProductServicesPage = () => {
               </p>
             </div>
 
-            <motion.div
-              variants={{
-                hover: { scale: 1.08, x: -12 }
-              }}
-              transition={{ type: "spring", stiffness: 150, damping: 20 }}
-              className="absolute top-1/4 right-0 w-1/2 h-3/4 pointer-events-none"
-            >
-              <motion.div
-                animate={{ y: [0, -5, 0] }}
-                transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
+            <div className="absolute top-1/4 right-0 w-1/2 h-3/4 pointer-events-none">
+              <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right"
                 style={{ backgroundImage: 'url("images/grid2.png")' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Product Research */}
@@ -369,7 +262,6 @@ const ProductServicesPage = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             viewport={{ once: true }}
             className="md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-4 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-green-200"
           >
@@ -383,20 +275,12 @@ const ProductServicesPage = () => {
               </p>
             </div>
 
-            <motion.div
-              variants={{
-                hover: { scale: 1.12, rotate: 3, y: -6 }
-              }}
-              transition={{ type: "spring", stiffness: 150, damping: 20 }}
-              className="absolute right-0 bottom-0 w-1/2 h-1/2 pointer-events-none"
-            >
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
+            <div className="absolute right-0 bottom-0 w-1/2 h-1/2 pointer-events-none">
+              <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right-bottom"
                 style={{ backgroundImage: 'url("images/grid4.png")' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Product Growth */}
@@ -404,7 +288,6 @@ const ProductServicesPage = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             viewport={{ once: true }}
             className="md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-4 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-blue-200"
           >
@@ -418,20 +301,12 @@ const ProductServicesPage = () => {
               </p>
             </div>
 
-            <motion.div
-              variants={{
-                hover: { scale: 1.12, y: -10, x: 5 }
-              }}
-              transition={{ type: "spring", stiffness: 150, damping: 20 }}
-              className="absolute right-0 bottom-0 w-1/2 h-1/2 pointer-events-none"
-            >
-              <motion.div
-                animate={{ y: [0, -5, 0] }}
-                transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+            <div className="absolute right-0 bottom-0 w-1/2 h-1/2 pointer-events-none">
+              <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right-bottom"
                 style={{ backgroundImage: 'url("images/grid4.webp")' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Software Development */}
@@ -439,7 +314,6 @@ const ProductServicesPage = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             viewport={{ once: true }}
             className="md:col-span-4 md:row-span-3 md:row-start-6 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-orange-200"
           >
@@ -453,20 +327,12 @@ const ProductServicesPage = () => {
               </p>
             </div>
 
-            <motion.div
-              variants={{
-                hover: { scale: 1.08, y: -8, rotate: -1 }
-              }}
-              transition={{ type: "spring", stiffness: 150, damping: 20 }}
-              className="absolute bottom-0 left-0 w-1/2 h-3/4 pointer-events-none"
-            >
-              <motion.div
-                animate={{ y: [0, -5, 0] }}
-                transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+            <div className="absolute bottom-0 left-0 w-1/2 h-3/4 pointer-events-none">
+              <div
                 className="w-full h-full bg-contain bg-no-repeat bg-left-bottom"
                 style={{ backgroundImage: 'url("images/grid5.png")' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Maintenance & Support */}
@@ -474,7 +340,6 @@ const ProductServicesPage = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            whileHover="hover"
             viewport={{ once: true }}
             className="md:col-span-2 md:row-span-3 md:col-start-5 md:row-start-6 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-yellow-200"
           >
@@ -488,24 +353,16 @@ const ProductServicesPage = () => {
               </p>
             </div>
 
-            <motion.div
-              variants={{
-                hover: { scale: 1.08, x: 8, y: -5 }
-              }}
-              transition={{ type: "spring", stiffness: 150, damping: 20 }}
-              className="absolute bottom-0 right-0 w-2/3 h-1/2 pointer-events-none"
-            >
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+            <div className="absolute bottom-0 right-0 w-2/3 h-1/2 pointer-events-none">
+              <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right-bottom"
                 style={{ backgroundImage: 'url("images/grid7.png")' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
 
-        {/* 7 Days Section (Upgraded with Interactive 3D Glow Design) */}
+        {/* 7 Days Section */}
         <InteractiveCTABox />
 
         <WorkShowcase />

@@ -1,0 +1,96 @@
+/* Replaces react-type-animation entirely. 4 phrases, 2.5s each,
+   10s total loop, staggered purely via animation-delay. Zero JS,
+   zero extra npm dependency, no hydration cost. */
+
+.wordWrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  height: 1.25em;
+  min-width: 1px;
+}
+
+@keyframes wordFade {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  4% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.word {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  opacity: 0;
+  animation: wordFade 10s ease-in-out infinite;
+}
+
+.word:nth-child(1) {
+  animation-delay: 0s;
+}
+.word:nth-child(2) {
+  animation-delay: 2.5s;
+}
+.word:nth-child(3) {
+  animation-delay: 5s;
+}
+.word:nth-child(4) {
+  animation-delay: 7.5s;
+}
+
+/* Entrance animation, replaces framer-motion initial/animate on
+   the nav, title, paragraph and button. Plays automatically once
+   the server-rendered HTML paints — no JS required to trigger it. */
+.fadeUp {
+  animation: fadeUp 0.6s ease-out both;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word,
+  .fadeUp {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  /* Reduced motion: show the first phrase only, statically */
+  .word:not(:nth-child(1)) {
+    display: none;
+  }
+}

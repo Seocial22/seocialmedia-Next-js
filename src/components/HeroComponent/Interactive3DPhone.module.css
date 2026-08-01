@@ -1,0 +1,32 @@
+/* All decorative motion here is CSS-only. The ONLY thing that needs
+   JavaScript on this component is the pointer-driven tilt, because
+   that genuinely depends on live mouse coordinates (a browser API). */
+
+.tiltCard {
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+  will-change: transform;
+}
+
+@keyframes softPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: softPulse 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tiltCard {
+    transition: none;
+  }
+  .pulse {
+    animation: none;
+  }
+}

@@ -1,0 +1,34 @@
+/* Pure CSS replacement for the Framer Motion FloatingShape.
+   No JS is shipped for this animation — the browser's compositor
+   handles transform/opacity animations off the main thread. */
+
+@keyframes floatBlob {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.35;
+  animation-name: floatBlob;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /* animation-duration is set inline per-blob via style prop */
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob {
+    animation: none;
+  }
+}
