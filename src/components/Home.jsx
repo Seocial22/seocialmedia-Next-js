@@ -264,7 +264,7 @@ const HomePage = () => {
     "@type": "Organization",
     name: "SEOcial Media Solutions",
     url: "https://www.seocialmedia.in/",
-    logo: "https://www.seocialmedia.in/images/company-logo.webp",
+    logo: "https://www.seocialmedia.in/images/company-logo.png",
   };
 
   return (

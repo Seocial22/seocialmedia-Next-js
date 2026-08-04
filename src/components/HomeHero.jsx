@@ -19,6 +19,7 @@ import HeroContent from "./HeroComponent/HeroContent";
 import HeroButtons from "./HeroComponent/HeroButtons";
 import WaveBottom from "./HeroComponent/WaveBottom";
 import Interactive3DPhone from "./HeroComponent/Interactive3DPhone";
+// import PhoneGate from "./HeroComponent/PhoneGate";
 
 export default function HomeHero() {
 
@@ -49,6 +50,7 @@ export default function HomeHero() {
               the phone. Pure CSS, evaluated on the server, zero JS. */}
           <div className="hidden lg:col-span-5 lg:flex justify-center lg:justify-end">
             <Interactive3DPhone />
+            {/* <PhoneGate /> */}
           </div>
         </div>
       </div>

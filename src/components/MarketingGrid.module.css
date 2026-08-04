@@ -1,0 +1,102 @@
+/* ---------- Entrance animations (replaces initial/animate) ---------- */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpScale {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.headerFadeIn {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+/* Card entrance + hover lift (replaces whileHover={{ y: -8 }}) */
+.card {
+  animation: fadeInUpScale 0.5s ease-out both;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Description expand/collapse (replaces animate={{ height: "auto" | "120px" }}) */
+.description {
+  max-height: 120px;
+  transition: max-height 0.35s ease;
+}
+
+.descriptionExpanded {
+  max-height: 800px;
+}
+
+/* Expanded paragraph fade-in (replaces motion.p initial/animate opacity) */
+.fadeIn {
+  animation: fadeIn 0.3s ease-out both;
+}
+
+/* Read More / Read Less button (replaces whileHover x:5, whileTap scale:0.95) */
+.readMoreBtn {
+  transform: translateX(0) scale(1);
+  transition: transform 0.2s ease;
+}
+
+.readMoreBtn:hover {
+  transform: translateX(5px);
+}
+
+.readMoreBtn:active {
+  transform: scale(0.95);
+}
+
+/* Chevron rotation (replaces motion.div animate={{ rotate: ... }}) */
+.chevron {
+  display: inline-flex;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.chevronRotated {
+  transform: rotate(180deg);
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .headerFadeIn,
+  .card,
+  .fadeIn {
+    animation: none;
+  }
+
+  .card:hover,
+  .readMoreBtn,
+  .chevron,
+  .description {
+    transition: none;
+  }
+}

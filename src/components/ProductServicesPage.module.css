@@ -1,0 +1,46 @@
+/* Entrance animations that used to be framer-motion `initial`/`whileInView`.
+   These run once on mount via pure CSS — no JS, no IntersectionObserver. */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpScale {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.fadeInUpDelayed {
+  animation: fadeInUp 0.5s ease-out 0.2s both;
+}
+
+.card {
+  animation: fadeInUpScale 0.5s ease-out both;
+}
+
+/* Respect users who prefer reduced motion — good practice, also a common
+   Lighthouse/accessibility-adjacent recommendation. */
+@media (prefers-reduced-motion: reduce) {
+  .fadeInUp,
+  .fadeInUpDelayed,
+  .card {
+    animation: none;
+  }
+}

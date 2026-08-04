@@ -77,7 +77,7 @@ export async function generateMetadata({ params }) {
           name: "Seocial Media Solution",
           logo: {
             "@type": "ImageObject",
-            url: "https://seocialmedia.in/images/company-logo.webp",
+            url: "https://seocialmedia.in/images/company-logo.png",
           },
         },
         datePublished: blog.date,

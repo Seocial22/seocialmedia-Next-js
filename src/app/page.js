@@ -131,7 +131,7 @@ export function generateStructuredData() {
         "url": "https://seocialmedia.in",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://seocialmedia.in/images/company-logo.webp" // Replace with actual logo URL
+          "url": "https://seocialmedia.in/images/company-logo.png" // Replace with actual logo URL
         },
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61564390163701", // Replace with actual social profiles
@@ -168,7 +168,7 @@ export function generateStructuredData() {
         "@type": "LocalBusiness",
         "@id": "https://seocialmedia.in/#localbusiness",
         "name": "SEOcial Media Solutions",
-        "image": "https://seocialmedia.in/company-logo.webp",
+        "image": "https://seocialmedia.in/company-logo.png",
         "telephone": "+91-9461677122",
         "address": {
           "@type": "PostalAddress",

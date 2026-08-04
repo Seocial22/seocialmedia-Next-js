@@ -2,6 +2,8 @@
    No JS is shipped for this animation — the browser's compositor
    handles transform/opacity animations off the main thread. */
 
+/* Pure CSS replacement for the Framer Motion FloatingShape */
+
 @keyframes floatBlob {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -18,17 +20,40 @@
   position: absolute;
   border-radius: 9999px;
   pointer-events: none;
-  filter: blur(80px);
+
+  /* Testing */
+  filter: blur(0px);
+
   opacity: 0.35;
+
   animation-name: floatBlob;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  /* animation-duration is set inline per-blob via style prop */
+
   will-change: transform;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .blob {
     animation: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .blob {
+    filter: blur(50px);
+  }
+}
+
+@media (max-width: 768px) {
+  .blob {
+    filter: blur(15px);
+    animation: none;
+    opacity: 0.15;
+  }
+
+  .blob:nth-child(2),
+  .blob:nth-child(3) {
+    display: none;
   }
 }

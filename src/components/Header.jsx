@@ -34,7 +34,7 @@ const Header = () => {
         },
         { title: "Content Writing", href: "/content-writing-company-jaipur" },
         { title: "Video Editing", href: "/video-editing-company-jaipur" },
-         { title: "Ecommerce Listing", href: "/ecommerce-listing-service-jaipur" },
+        { title: "Ecommerce Listing", href: "/ecommerce-listing-service-jaipur" },
         { title: "Our branding strategy", href: "/best-digital-marketing-branding-services-jaipur" },
         { title: "Mobile App Development", href: "/top-app-development-company-jaipur" },
       ],
@@ -106,11 +106,12 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/company-logo.webp"
+                src="/images/company-logo.png"
                 alt="Company Logo"
-                className="h-14"
                 width={150}
                 height={50}
+                className="h-14 w-auto"
+                priority
               />
             </Link>
           </div>
@@ -122,11 +123,10 @@ const Header = () => {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className={`flex items-center font-medium transition-colors hover:text-indigo-600 ${
-                      pathname === item.href
+                    className={`flex items-center font-medium transition-colors hover:text-indigo-600 ${pathname === item.href
                         ? "text-indigo-600"
                         : "text-gray-700"
-                    }`}
+                      }`}
                   >
                     {item.title}
                     {item.submenu && (
@@ -152,11 +152,10 @@ const Header = () => {
                       <Link
                         key={subItem.title}
                         href={subItem.href}
-                        className={`block px-4 py-3 text-sm hover:text-indigo-600 hover:bg-gray-50 ${
-                          pathname === subItem.href
+                        className={`block px-4 py-3 text-sm hover:text-indigo-600 hover:bg-gray-50 ${pathname === subItem.href
                             ? "text-indigo-600 bg-gray-50"
                             : "text-gray-600"
-                        }`}
+                          }`}
                       >
                         {subItem.title}
                       </Link>
@@ -183,9 +182,8 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`lg:hidden bg-white/90 backdrop-blur-md transition-all overflow-hidden ${
-            isOpen ? "max-h-screen" : "max-h-0"
-          }`}
+          className={`lg:hidden bg-white/90 backdrop-blur-md transition-all overflow-hidden ${isOpen ? "max-h-screen" : "max-h-0"
+            }`}
         >
           <div className="py-4 space-y-2 px-4">
             {menuItems.map((item) => (
@@ -194,11 +192,10 @@ const Header = () => {
                   item.href ? (
                     <Link
                       href={item.href}
-                      className={`block py-2 font-medium ${
-                        pathname === item.href
+                      className={`block py-2 font-medium ${pathname === item.href
                           ? "text-indigo-600"
                           : "text-gray-700"
-                      }`}
+                        }`}
                       onClick={() => setIsOpen(false)}
                     >
                       {item.title}
@@ -211,36 +208,32 @@ const Header = () => {
                 ) : (
                   <div>
                     <button
-                      className={`flex justify-between w-full py-2 font-medium ${
-                        activeSubmenu === item.title
+                      className={`flex justify-between w-full py-2 font-medium ${activeSubmenu === item.title
                           ? "text-indigo-600"
                           : "text-gray-700"
-                      }`}
+                        }`}
                       onClick={() => toggleSubmenu(item.title)}
                     >
                       {item.title}
                       <ChevronDown
-                        className={`w-4 h-4 transform transition-transform ${
-                          activeSubmenu === item.title ? "rotate-180" : ""
-                        }`}
+                        className={`w-4 h-4 transform transition-transform ${activeSubmenu === item.title ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
                     <div
-                      className={`pl-4 space-y-1 overflow-hidden transition-all ${
-                        activeSubmenu === item.title
+                      className={`pl-4 space-y-1 overflow-hidden transition-all ${activeSubmenu === item.title
                           ? "max-h-screen py-2"
                           : "max-h-0"
-                      }`}
+                        }`}
                     >
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.title}
                           href={subItem.href}
-                          className={`block py-2 ${
-                            pathname === subItem.href
+                          className={`block py-2 ${pathname === subItem.href
                               ? "text-indigo-600"
                               : "text-gray-600"
-                          }`}
+                            }`}
                           onClick={() => setIsOpen(false)}
                         >
                           {subItem.title}

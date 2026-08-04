@@ -76,12 +76,10 @@ const FloatingContact = () => {
 
         {/* Main Character Toggle */}
         <div className="relative group">
-          {/* Chat Bubble */}
+          {/* Chat Bubble - only visible on hover of the avatar, and only when closed */}
           <div
-            className={`absolute bottom-full right-0 mb-3 md:mb-4 transition-all duration-500 ${
-              isOpen
-                ? "opacity-0 scale-95 pointer-events-none"
-                : "opacity-100 scale-100"
+            className={`absolute bottom-full right-0 mb-3 md:mb-4 transition-all duration-500 opacity-0 scale-95 pointer-events-none ${
+              isOpen ? "" : "group-hover:opacity-100 group-hover:scale-100"
             }`}
           >
             <div className="bg-white rounded-2xl px-4 md:px-6 py-2 md:py-3 shadow-2xl border-2 border-purple-100 relative">
