@@ -1,11 +1,10 @@
-/* All decorative motion here is CSS-only. The ONLY thing that needs
-   JavaScript on this component is the pointer-driven tilt, because
-   that genuinely depends on live mouse coordinates (a browser API). */
+/* Ab tiltCard sirf 3D-perspective ke liye preserve-3d rakhta hai
+   (badges ka translateZ effect dikhane ke liye) — koi transition/
+   will-change ki zaroorat nahi kyunki transform ab kabhi JS se
+   change nahi hota. */
 
 .tiltCard {
   transform-style: preserve-3d;
-  transition: transform 0.15s ease-out;
-  will-change: transform;
 }
 
 @keyframes softPulse {
@@ -23,9 +22,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tiltCard {
-    transition: none;
-  }
   .pulse {
     animation: none;
   }

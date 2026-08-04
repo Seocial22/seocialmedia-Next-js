@@ -1,71 +1,18 @@
-"use client";
+// NOTE: "use client" ab zaroori nahi hai — is component mein koi browser
+// API (mousemove, matchMedia, state) use nahi ho raha. Poora phone card
+// static hai, sirf CSS animation (pulse) chal rahi hai jo GPU compositor
+// free mein handle karta hai. Isse ye ab server par bhi render ho sakta
+// hai (agar chaho to PhoneGate ka dynamic/ssr:false wrapper bhi hata
+// sakte ho — neeche note dekho).
 
-// Client Component — the ONLY mandatory one in this Hero.
-// It genuinely needs the browser: it reads live pointer coordinates
-// (mousemove) and reacts to them, which cannot be done on the server
-// or with static CSS alone.
-//
-// Optimization vs. the original:
-// Framer Motion's useMotionValue/useTransform/useSpring pulled in the
-// whole framer-motion runtime (~30-40kb gzipped) just to smooth two
-// numbers. That's replaced with plain useState + a CSS `transition`
-// (see Interactive3DPhone.module.css) which the compositor animates
-// for free. framer-motion is no longer a dependency of this component.
-//
-// It also skips attaching any mousemove/tilt logic on small screens
-// (checked once via matchMedia), so mobile devices that happen to
-// still receive this chunk do the least possible work with it. The
-// actual visual hiding on mobile, however, is done with CSS by the
-// parent (HeroSection), which costs nothing.
-
-import { useState, useRef, useEffect } from "react";
 import { Sparkles, TrendingUp } from "lucide-react";
 import styles from "./Interactive3DPhone.module.css";
 
-const MAX_TILT_DEG = 15;
-
 export default function Interactive3DPhone() {
-  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
-  const [isDesktop, setIsDesktop] = useState(true);
-  const frame = useRef(null);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(min-width: 1024px)");
-    setIsDesktop(mq.matches);
-    const onChange = (e) => setIsDesktop(e.matches);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, []);
-
-  // Don't do any tilt work at all if we're not on a desktop viewport —
-  // avoids attaching listeners / computing state for nothing.
-  if (!isDesktop) return null;
-
-  const handleMouseMove = (event) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const mouseX = (event.clientX - rect.left) / rect.width - 0.5;
-    const mouseY = (event.clientY - rect.top) / rect.height - 0.5;
-
-    if (frame.current) cancelAnimationFrame(frame.current);
-    frame.current = requestAnimationFrame(() => {
-      setTilt({
-        rotateX: mouseY * -MAX_TILT_DEG,
-        rotateY: mouseX * MAX_TILT_DEG,
-      });
-    });
-  };
-
-  const handleMouseLeave = () => setTilt({ rotateX: 0, rotateY: 0 });
-
   return (
     <div className="relative w-full max-w-[400px] h-[540px] [perspective:1000px] z-20 flex justify-center items-center">
       <div
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
         className={`${styles.tiltCard} relative w-[280px] h-[490px] bg-slate-900/80 backdrop-blur-xl border-[6px] border-slate-800 rounded-[45px] p-2.5 shadow-[0_25px_60px_rgba(0,0,0,0.5)] flex flex-col justify-between cursor-pointer`}
-        style={{
-          transform: `rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
-        }}
       >
         {/* Phone Notch/Speaker */}
         <div className="w-20 h-4 bg-slate-800 rounded-full absolute -top-1 left-1/2 -translate-x-1/2 flex items-center justify-center z-30">
@@ -119,8 +66,7 @@ export default function Interactive3DPhone() {
           </div>
         </div>
 
-        {/* Floating badges — static position (translateZ only), no
-            per-badge animation library needed */}
+        {/* Floating badges — static, position fixed via translateZ, no JS needed */}
         <div
           style={{ transform: "translateZ(80px)" }}
           className="absolute top-10 -left-12 bg-slate-900/90 backdrop-blur-md border border-white/15 p-3 rounded-2xl shadow-2xl flex items-center gap-2.5 w-[160px]"
