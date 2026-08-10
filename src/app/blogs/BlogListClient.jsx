@@ -129,7 +129,7 @@ const BlogListClient = () => {
         "@type": "BlogPosting",
         headline: blog.heading,
         description: blog.excerpt,
-        url: `https://seocialmedia.in/blog/${blog.slug}`,
+        url: `https://seocialmedia.in/blogs/${blog.slug}`,
         datePublished: blog.date,
         image: `https://seocialmedia.in${blog.image}`,
         author: {
@@ -227,7 +227,7 @@ const BlogListClient = () => {
               key={blog.id}
               className="group bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white border-opacity-20"
             >
-              <Link href={`/blog/${blog.slug}`} className="block relative">
+              <Link href={`/blogs/${blog.slug}`} className="block relative">
                 <div className="h-64 bg-gradient-to-br from-blue-400 to-purple-600 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black from-opacity-30 to-transparent z-10"></div>
                   <Image
@@ -274,7 +274,7 @@ const BlogListClient = () => {
                   </div>
                 </div>
 
-                <Link href={`/blog/${blog.slug}`} className="block">
+                <Link href={`/blogs/${blog.slug}`} className="block">
                   <h2 className="text-xl font-bold text-gray-800 mb-4 hover:text-blue-600 transition-colors duration-300 leading-tight group-hover:text-blue-600">
                     {blog.heading}
                   </h2>
@@ -297,7 +297,7 @@ const BlogListClient = () => {
                 </div>
 
                 <Link
-                  href={`/blog/${blog.slug}`}
+                  href={`/blogs/${blog.slug}`}
                   className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   Read Full Article

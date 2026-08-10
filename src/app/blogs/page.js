@@ -13,13 +13,13 @@ export const metadata = {
   publisher: "Mudit Mathur",
   robots: "index, follow",
   alternates: {
-    canonical: "https://seocialmedia.in/blog",
+    canonical: "https://seocialmedia.in/blogs",
   },
   openGraph: {
     title: "SEOcial Media Blog | Expert Insights on Marketing & Web Development",
     description:
       "Explore our blog for the latest trends, tips, and strategies in digital marketing, web development, SEO, and social media.",
-    url: "https://seocialmedia.in/blog",
+    url: "https://seocialmedia.in/blogs",
     siteName: "SEOcial Media Solutions",
     images: [
       {

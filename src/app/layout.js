@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        
         <meta
           name="facebook-domain-verification"
           content="2koju9tvodnexe6azl5ruldzrfvow5"
@@ -26,3 +27,16 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};

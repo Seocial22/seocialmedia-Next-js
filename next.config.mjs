@@ -29,6 +29,16 @@ const nextConfig = {
           "/blog/top-10-digital-marketing-agencies-jaipur-seocial-media-solutions",
         permanent: true,
       },
+      {
+        source: "/blog",
+        destination: "/blogs",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug",
+        destination: "/blogs/:slug",
+        permanent: true,
+      },
     ];
   },
 };

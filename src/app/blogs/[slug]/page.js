@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
     // ✅ Canonical URL
     alternates: {
       canonical:
-        blog.canonicalUrl || `https://seocialmedia.in/blog/${blog.slug}`,
+        blog.canonicalUrl || `https://seocialmedia.in/blogs/${blog.slug}`,
     },
 
     // ✅ Keywords
@@ -84,7 +84,7 @@ export async function generateMetadata({ params }) {
         dateModified: blog.date,
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `https://seocialmedia.in/blog/${blog.slug}`,
+          "@id": `https://seocialmedia.in/blogs/${blog.slug}`,
         },
       }),
     },
@@ -94,7 +94,7 @@ export async function generateMetadata({ params }) {
       title: blog.title,
       description: blog.metaDescription || blog.excerpt,
       type: "article",
-      url: `https://seocialmedia.in/blog/${blog.slug}`,
+      url: `https://seocialmedia.in/blogs/${blog.slug}`,
       images: [
         {
           url: `https://seocialmedia.in${blog.image}`,
@@ -184,7 +184,7 @@ export default async function SingleBlogPage({ params }) {
               Could not find blog with slug: {slug}
             </p>
             <Link
-              href="/blog"
+              href="/blogs"
               className="inline-block bg-[#016630] text-white px-4 py-2 rounded-lg hover:opacity-90 transition duration-300"
             >
               Back to Blogs
@@ -257,7 +257,7 @@ export default async function SingleBlogPage({ params }) {
           {/* Back button */}
           <div className="mt-10 pt-6 border-t border-gray-200">
             <Link
-              href="/blog"
+              href="/blogs"
               className="inline-block bg-[#305424] text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300"
             >
               ← Back to All Blogs

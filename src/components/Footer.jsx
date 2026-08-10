@@ -72,11 +72,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <Image
-              src="/images/footer-logo.png"
+              src="/images/footer-logo.webp"
               alt="Company Logo"
-              width={120}
-              height={48}
-              className="h-12 w-auto"
+              width={623}
+              height={270}
+              className="w-[120px] h-auto"
+              priority
             />
             <p className="text-sm leading-relaxed">
               Empowering businesses with comprehensive digital marketing solutions that drive real growth.
