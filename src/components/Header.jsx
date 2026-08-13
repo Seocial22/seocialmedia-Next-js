@@ -80,6 +80,7 @@ const Header = () => {
     <div className="flex items-center md:hidden gap-2">
       <a
         href="tel:+919461677122"
+        aria-label="Call for consultation"
         className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 
                  rounded-full hover:from-green-500 hover:to-green-600 transition-all"
       >
@@ -89,6 +90,7 @@ const Header = () => {
         href="https://wa.me/+919461677122"
         target="_blank"
         rel="noreferrer"
+        aria-label="Chat on WhatsApp"
         className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-emerald-400 to-emerald-500 
                  rounded-full hover:from-emerald-500 hover:to-emerald-600 transition-all"
       >
@@ -106,7 +108,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/company-logo.png"
+                src="/images/company-logo.webp"
                 alt="Company Logo"
                 width={150}
                 height={50}
@@ -173,6 +175,7 @@ const Header = () => {
             <QuickContactButtons />
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle navigation menu"
               className="text-gray-700 hover:text-indigo-600"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}

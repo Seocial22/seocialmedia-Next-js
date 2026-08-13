@@ -41,6 +41,7 @@ const FloatingContact = () => {
 
       <button
         onClick={onClick}
+        aria-label={label}
         className={`w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 transform hover:scale-110 active:scale-95 ${bgColor} relative z-10`}
       >
         <div className="w-6 h-6 md:w-8 md:h-8">{icon}</div>
@@ -95,6 +96,7 @@ const FloatingContact = () => {
           {/* Character Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle contact menu"
             className="relative w-16 h-16 md:w-24 md:h-24 transition-all duration-500 transform hover:scale-110 active:scale-95"
           >
             <div
@@ -107,7 +109,7 @@ const FloatingContact = () => {
 
               {/* Avatar */}
               <Image
-                src="/images/smsavatar.png"
+                src="/images/smsavatar.webp"
                 alt="Chat Character"
                 width={200}
                 height={200}
