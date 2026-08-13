@@ -215,7 +215,7 @@ export default async function SingleBlogPage({ params }) {
         />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 rounded-lg"></div> */}
       
-      </div>
+    </div>
 
       {/* Content section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
