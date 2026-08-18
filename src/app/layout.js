@@ -29,14 +29,3 @@ export default function RootLayout({ children }) {
 }
 
 
-export const metadata = {
-  robots: {
-    index: false,
-    follow: false,
-    nocache: true,
-    googleBot: {
-      index: false,
-      follow: false,
-    },
-  },
-};
