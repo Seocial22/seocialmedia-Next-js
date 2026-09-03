@@ -1,6 +1,4 @@
-import { Metadata } from 'next';
 import HomePage from "@/components/Home";
-import NewYearPopup from '@/components/NewYearPopup';
 
 export const metadata = {
   title: "Best Digital Marketing Agency in Jaipur | SEOcial",

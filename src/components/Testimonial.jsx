@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { ChevronLeft, ChevronRight, Star, Building2, Briefcase } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';

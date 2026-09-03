@@ -1,10 +1,50 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import { MapPin, Phone, Mail, Layers, Rocket, Lightbulb } from "lucide-react";
 
 import Testimonial from "./Testimonial";
 import TechShowcase from "./TechShowcase";
 import FAQAccordion from "./FAQAccordion";
-// import YouTubeShort from "./YouTubeShort";
+
+const LazyGoogleMap = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const mapContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (!mapContainerRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "300px" }
+    );
+    observer.observe(mapContainerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={mapContainerRef} className="h-[300px] sm:h-[400px] relative bg-slate-100 flex items-center justify-center">
+      {isVisible ? (
+        <iframe
+          title="Google Map - SEOcial Media Solutions"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.185377920299!2d75.759862!3d26.886502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x497961d98b0fc69b%3A0xac294f01cba870af!2sSEOcial%20Media%20Solutions!5e0!3m2!1sen!2sin!4v1698067342738!5m2!1sen!2sin"
+          className="w-full h-full border-none"
+          allowFullScreen
+          loading="lazy"
+        />
+      ) : (
+        <div className="flex flex-col items-center justify-center gap-2 text-slate-500">
+          <MapPin className="w-8 h-8 text-blue-600 animate-pulse" />
+          <span className="text-xs font-semibold">Loading Map...</span>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const UnifiedLandingPage = () => {
   const features = [
@@ -75,16 +115,8 @@ const UnifiedLandingPage = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12">
-              <div className="bg-white rounded-3xl  shadow-lg overflow-hidden transition-all duration-300 hover:rounded-none">
-                <div className="h-[300px] sm:h-[400px] relative">
-                  <iframe
-                    title="Google Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.185377920299!2d75.759862!3d26.886502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x497961d98b0fc69b%3A0xac294f01cba870af!2sSEOcial%20Media%20Solutions!5e0!3m2!1sen!2sin!4v1698067342738!5m2!1sen!2sin"
-                    className="w-full h-full border-none"
-                    allowFullScreen
-                    loading="lazy"
-                  />
-                </div>
+              <div className="bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300">
+                <LazyGoogleMap />
                 <div className="p-6 sm:p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="bg-blue-100 p-3 rounded-xl">

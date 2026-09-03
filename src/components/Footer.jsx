@@ -66,7 +66,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#101340] text-gray-300">
+    <footer className="bg-[#101340] text-slate-200">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
@@ -74,12 +74,12 @@ const Footer = () => {
             <Image
               src="/images/footer-logo.webp"
               alt="Company Logo"
-              width={623}
-              height={270}
+              width={120}
+              height={52}
               className="w-[120px] h-auto"
-              priority
+              loading="lazy"
             />
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed text-slate-300">
               Empowering businesses with comprehensive digital marketing solutions that drive real growth.
               Your trusted partner in the digital transformation journey.
             </p>
@@ -90,7 +90,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                  className="text-slate-300 hover:text-white transition-colors duration-300"
                   aria-label={social.name}
                 >
                   <social.icon className="w-5 h-5" />
@@ -107,7 +107,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-white hover:underline transition-colors duration-300 flex items-center"
+                    className="text-sm text-slate-300 hover:text-white hover:underline transition-colors duration-300 flex items-center"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     {link.name}
@@ -125,7 +125,7 @@ const Footer = () => {
                 <li key={service.name}>
                   <Link
                     href={service.href}
-                    className="text-sm hover:text-white hover:underline transition-colors duration-300 flex items-center"
+                    className="text-sm text-slate-300 hover:text-white hover:underline transition-colors duration-300 flex items-center"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     {service.name}
@@ -140,24 +140,24 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-6">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-sm">
+                <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-blue-400" />
+                <p className="text-sm text-slate-300">
                   Sagar, 1, opp. VS Medihub, Nirman Nagar, Ranisati Nagar, Jaipur, Rajasthan 302019
                 </p>
               </div>
               <div className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 flex-shrink-0" />
-                <a href="tel:+919461677122" className="text-sm hover:text-white transition-colors duration-300">
+                <Phone className="w-5 h-5 mr-3 flex-shrink-0 text-blue-400" />
+                <a href="tel:+919461677122" className="text-sm text-slate-300 hover:text-white transition-colors duration-300">
                   +91 9461677122
                 </a>
                 ,&nbsp;
-                <a href="tel:+918949342270" className="text-sm hover:text-white transition-colors duration-300">
+                <a href="tel:+918949342270" className="text-sm text-slate-300 hover:text-white transition-colors duration-300">
                   +91 8949342270
                 </a>
               </div>
               <div className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 flex-shrink-0" />
-                <a href="mailto:info@seocialmedia.in" className="text-sm hover:text-white transition-colors duration-300">
+                <Mail className="w-5 h-5 mr-3 flex-shrink-0 text-blue-400" />
+                <a href="mailto:info@seocialmedia.in" className="text-sm text-slate-300 hover:text-white transition-colors duration-300">
                   info@seocialmedia.in
                 </a>
               </div>
@@ -167,7 +167,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-sm">© {currentYear} SEOcial Media Solutions. All rights reserved.</p>
+          <p className="text-sm text-slate-400">© {currentYear} SEOcial Media Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

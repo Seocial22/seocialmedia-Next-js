@@ -53,7 +53,7 @@ const Header = () => {
       <div className="bg-gradient-to-r from-indigo-50 to-purple-50 px-3 py-2 rounded-lg">
         <div className="flex items-center gap-2">
           <Phone size={14} className="text-indigo-600 shrink-0" />
-          <span className="text-xs text-gray-500 whitespace-nowrap">
+          <span className="text-xs text-gray-700 whitespace-nowrap font-medium">
             For Consultation:
           </span>
           <div className="flex items-center gap-2">

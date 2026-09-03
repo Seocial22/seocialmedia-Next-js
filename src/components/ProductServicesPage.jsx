@@ -166,8 +166,8 @@ const ProductServicesPage = () => {
           >
             <div className="absolute inset-0 bg-purple-100/90 transition-transform duration-300 group-hover:scale-105" />
             <div className="relative z-10 mb-20">
-              <h2 className="text-2xl sm:text-3xl font-bold text-purple-900 mb-3">Product Strategy</h2>
-              <p className="text-purple-800 text-base sm:text-lg font-semibold">
+              <h2 className="text-2xl sm:text-3xl font-bold text-purple-950 mb-3">Product Strategy</h2>
+              <p className="text-purple-900 text-base sm:text-lg font-semibold">
                 Crafting visionary blueprints to drive your product&apos;s success.
               </p>
             </div>
@@ -175,7 +175,7 @@ const ProductServicesPage = () => {
               <div
                 className="w-full h-full bg-cover bg-center opacity-90"
                 style={{
-                  backgroundImage: 'url("images/grid.png")',
+                  backgroundImage: 'url("/images/grid.webp")',
                   backgroundPosition: "center bottom",
                   backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
@@ -186,95 +186,95 @@ const ProductServicesPage = () => {
 
           {/* UI & UX Design */}
           <div
-            className={`md:col-span-4 md:row-span-3 md:col-start-3 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-pink-400 ${styles.card}`}
+            className={`md:col-span-4 md:row-span-3 md:col-start-3 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-pink-100 ${styles.card}`}
           >
-            <div className="absolute inset-0 bg-pink-400/90 transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-pink-100/90 transition-transform duration-300 group-hover:scale-105" />
             <div className="relative z-10 mb-16">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">UI & UX Design</h2>
-              <p className="text-gray-700 text-base sm:text-lg font-semibold">
+              <h2 className="text-2xl sm:text-3xl font-bold text-pink-950 mb-3">UI & UX Design</h2>
+              <p className="text-pink-900 text-base sm:text-lg font-semibold">
                 Designing delightful and intuitive user experiences.
               </p>
             </div>
             <div className="absolute top-1/4 right-0 w-1/2 h-3/4 pointer-events-none">
               <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right"
-                style={{ backgroundImage: 'url("images/grid2.png")' }}
+                style={{ backgroundImage: 'url("/images/grid2.webp")' }}
               />
             </div>
           </div>
 
           {/* Product Research */}
           <div
-            className={`md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-4 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-green-200 ${styles.card}`}
+            className={`md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-4 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-green-100 ${styles.card}`}
           >
-            <div className="absolute inset-0 bg-green-200/90 transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-green-100/90 transition-transform duration-300 group-hover:scale-105" />
             <div className="relative z-10 mb-12">
-              <h2 className="text-xl sm:text-2xl font-bold text-green-900 mb-3">Product Research</h2>
-              <p className="text-green-800 text-base font-semibold">
+              <h2 className="text-xl sm:text-2xl font-bold text-green-950 mb-3">Product Research</h2>
+              <p className="text-green-900 text-base font-semibold">
                 Uncovering deep insights to fuel informed decisions.
               </p>
             </div>
             <div className="absolute right-0 bottom-0 w-1/2 h-1/2 pointer-events-none">
               <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right-bottom"
-                style={{ backgroundImage: 'url("images/grid4.png")' }}
+                style={{ backgroundImage: 'url("/images/grid4.webp")' }}
               />
             </div>
           </div>
 
           {/* Product Growth */}
           <div
-            className={`md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-4 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-blue-200 ${styles.card}`}
+            className={`md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-4 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-blue-100 ${styles.card}`}
           >
-            <div className="absolute inset-0 bg-blue-200/90 transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-blue-100/90 transition-transform duration-300 group-hover:scale-105" />
             <div className="relative z-10 mb-12">
-              <h2 className="text-xl sm:text-2xl font-bold text-blue-900 mb-3">Product Growth</h2>
-              <p className="text-blue-800 text-base font-semibold">
+              <h2 className="text-xl sm:text-2xl font-bold text-blue-950 mb-3">Product Growth</h2>
+              <p className="text-blue-900 text-base font-semibold">
                 Accelerating your product&apos;s journey to market dominance.
               </p>
             </div>
             <div className="absolute right-0 bottom-0 w-1/2 h-1/2 pointer-events-none">
               <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right-bottom"
-                style={{ backgroundImage: 'url("images/grid4.webp")' }}
+                style={{ backgroundImage: 'url("/images/grid4.webp")' }}
               />
             </div>
           </div>
 
           {/* Software Development */}
           <div
-            className={`md:col-span-4 md:row-span-3 md:row-start-6 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-orange-200 ${styles.card}`}
+            className={`md:col-span-4 md:row-span-3 md:row-start-6 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-orange-100 ${styles.card}`}
           >
-            <div className="absolute inset-0 bg-orange-200/90 transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-orange-100/90 transition-transform duration-300 group-hover:scale-105" />
             <div className="relative z-10 mb-16 text-right">
-              <h2 className="text-2xl sm:text-3xl font-bold text-orange-900 mb-3">Software Development</h2>
-              <p className="text-orange-800 text-base sm:text-lg font-semibold">
+              <h2 className="text-2xl sm:text-3xl font-bold text-orange-950 mb-3">Software Development</h2>
+              <p className="text-orange-900 text-base sm:text-lg font-semibold">
                 Building robust software solutions tailored to your needs.
               </p>
             </div>
             <div className="absolute bottom-0 left-0 w-1/2 h-3/4 pointer-events-none">
               <div
                 className="w-full h-full bg-contain bg-no-repeat bg-left-bottom"
-                style={{ backgroundImage: 'url("images/grid5.png")' }}
+                style={{ backgroundImage: 'url("/images/grid5.webp")' }}
               />
             </div>
           </div>
 
           {/* Maintenance & Support */}
           <div
-            className={`md:col-span-2 md:row-span-3 md:col-start-5 md:row-start-6 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-yellow-200 ${styles.card}`}
+            className={`md:col-span-2 md:row-span-3 md:col-start-5 md:row-start-6 rounded-2xl p-6 relative overflow-hidden group cursor-pointer bg-yellow-100 ${styles.card}`}
           >
-            <div className="absolute inset-0 bg-yellow-200/90 transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-yellow-100/90 transition-transform duration-300 group-hover:scale-105" />
             <div className="relative z-10 mb-16">
-              <h2 className="text-xl sm:text-2xl font-bold text-yellow-900 mb-3">Maintenance & Support</h2>
-              <p className="text-yellow-800 text-base font-semibold">
+              <h2 className="text-xl sm:text-2xl font-bold text-yellow-950 mb-3">Maintenance & Support</h2>
+              <p className="text-yellow-900 text-base font-semibold">
                 Keeping your software seamless with expert updates and support.
               </p>
             </div>
             <div className="absolute bottom-0 right-0 w-2/3 h-1/2 pointer-events-none">
               <div
                 className="w-full h-full bg-contain bg-no-repeat bg-right-bottom"
-                style={{ backgroundImage: 'url("images/grid7.png")' }}
+                style={{ backgroundImage: 'url("/images/grid7.webp")' }}
               />
             </div>
           </div>

@@ -100,28 +100,6 @@ const ServicesCarousel = () => {
           </div>
         </div>
       </div>
-
-      {/* Marquee animation + reduced-motion support.
-         If your Tailwind config supports arbitrary keyframes globally,
-         you can move this into tailwind.config.js instead. */}
-      <style jsx global>{`
-        @keyframes marquee-right {
-          from {
-            transform: translateX(-50%);
-          }
-          to {
-            transform: translateX(0%);
-          }
-        }
-        .animate-marquee-right {
-          animation: marquee-right 28s linear infinite;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .animate-marquee-right {
-            animation: none;
-          }
-        }
-      `}</style>
     </section>
   );
 };

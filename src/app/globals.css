@@ -46,3 +46,20 @@ html {
     transform: rotate(360deg);
   }
 }
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.animate-marquee-right {
+  animation: marquee-right 28s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-right {
+    animation: none;
+  }
+}

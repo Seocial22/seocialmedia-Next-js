@@ -7,6 +7,18 @@ const withBundleAnalyzer = bundleAnalyzer({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+
+  experimental: {
+    optimizePackageImports: ["lucide-react", "react-icons"],
+  },
+
+  images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000,
+  },
 
   async redirects() {
     return [
@@ -46,6 +58,15 @@ const nextConfig = {
     return [
       {
         source: "/images/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/:all*(svg|jpg|png|webp|avif|woff2|woff)",
         headers: [
           {
             key: "Cache-Control",
