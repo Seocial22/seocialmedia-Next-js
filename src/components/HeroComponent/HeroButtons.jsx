@@ -24,7 +24,7 @@ export default function HeroButtons() {
           hover:scale-105"
       >
         <span className="absolute inset-0 w-full h-full rounded-xl bg-gradient-to-r from-blue-400 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm -z-10" />
-        <span>Get Your Free Consultation</span>
+        <span>Book Your Free Growth Audit</span>
         <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
       </Link>
     </div>

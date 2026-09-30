@@ -44,9 +44,9 @@ const InteractiveCTABox = () => {
               </span>
 
               <h2 className="text-3xl md:text-5xl font-black text-white leading-tight filter drop-shadow-[0_4px_6px_rgba(0,0,0,0.3)]">
-                Get Your Customized Website
+                Need a High-Converting Website Fast?
                 <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400">
-                  in Just 7 Days!
+                  Launch in just 7 Days
                 </span>
               </h2>
 
